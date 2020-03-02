@@ -1,2 +1,4 @@
+ [![Actions Status](https://github.com/tqkoh/library/workflows/verify/badge.svg)](https://github.com/tqkoh/library/actions)
+
 # library
-理解したデ/アを実装する
+ライブラリ整備始めました
