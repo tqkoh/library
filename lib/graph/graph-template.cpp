@@ -1,4 +1,3 @@
-#define IGNORE
 using length=lint;
 struct edge{
 	int src,to;
@@ -11,3 +10,7 @@ using Edges=vector<edge>;
 using Weighted=vector<Edges>;
 using UnWeighted=vector<vector<int> >;
 using Matrix=vector<vector<length> >;
+
+/*
+* @brief Graph Template
+*/
