@@ -2,7 +2,7 @@ using length=lint;
 struct edge{
 	int src,to;
 	length cost;
-
+	edge()=default;
 	edge(int src,int to,length cost): src(src),to(to),cost(cost){}
 };
 
