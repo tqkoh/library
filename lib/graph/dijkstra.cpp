@@ -36,5 +36,6 @@ pair<vector<status>,vector<int>> dijkstra(Weighted g,int s){
 }
 
 /*
-* @brief dijkstra
+* @title Dijkstra
+* @brief 負辺のないグラフのある頂点から全頂点への最短路を求めるアルゴリズム
 */

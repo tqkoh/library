@@ -34,5 +34,5 @@ void e2m(Matrix& g,Edges edges,bool directed,length infinity){
 
 
 /*
-* @brief Graph Template
+* @title Graph Template
 */
