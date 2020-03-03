@@ -13,14 +13,14 @@ using Matrix=vector<vector<length> >;
 
 void e2w(Weighted& g,Edges edges,bool directed){
 	for(auto& e:edges){
-		g[e.src].pb(e);
-		if(!directed)g[e.to].pb(edge(e.to,e.src,e.cost));
+		g[e.src].push_back(e);
+		if(!directed)g[e.to].push_back(edge(e.to,e.src,e.cost));
 	}
 }
 void e2u(UnWeighted& g,Edges edges,bool directed){
 	for(auto& e:edges){
-		g[e.src].pb(e.to);
-		if(!directed)g[e.to].pb(e.src);
+		g[e.src].push_back(e.to);
+		if(!directed)g[e.to].push_back(e.src);
 	}
 }
 void e2m(Matrix& g,Edges edges,bool directed,length infinity){
