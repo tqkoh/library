@@ -1,5 +1,5 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/unionfind"
-#include "../template/template.cpp"
+#include "test/template/template.cpp"
 #include "lib/data-structure/union-find.cpp"
 
 int main(){
