@@ -25,12 +25,12 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: test/data-structure/UnionFind.test.cpp
+# :heavy_check_mark: test/data-structure/union-find.test.cpp
 
 <a href="../../../index.html">Back to top page</a>
 
-* <a href="{{ site.github.repository_url }}/blob/master/test/data-structure/UnionFind.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-03 03:05:25+09:00
+* <a href="{{ site.github.repository_url }}/blob/master/test/data-structure/union-find.test.cpp">View this file on GitHub</a>
+    - Last commit date: 2020-03-03 04:13:43+09:00
 
 
 * see: <a href="https://judge.yosupo.jp/problem/unionfind">https://judge.yosupo.jp/problem/unionfind</a>
@@ -38,8 +38,7 @@ layout: default
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/lib/data-structure/UnionFind.cpp.html">Union Find <small>(lib/data-structure/UnionFind.cpp)</small></a>
-* :heavy_check_mark: <a href="../../../library/test/template/template.hpp.html">test/template/template.hpp</a>
+* :heavy_check_mark: <a href="../../../library/lib/data-structure/union-find.cpp.html">Union Find <small>(lib/data-structure/union-find.cpp)</small></a>
 
 
 ## Code
@@ -49,7 +48,7 @@ layout: default
 ```cpp
 #define PROBLEM "https://judge.yosupo.jp/problem/unionfind"
 #include "../template/template.hpp"
-#include "lib/data-structure/UnionFind.cpp"
+#include "lib/data-structure/union-find.cpp"
 
 int main(){
 	lint n,q; cin>>n>>q;
