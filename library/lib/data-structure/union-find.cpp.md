@@ -25,13 +25,13 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: Union Find <small>(lib/data-structure/union-find.cpp)</small>
+# :heavy_check_mark: Union Find
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#cbed23bc82f8d451042dd45b42d995ac">lib/data-structure</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/data-structure/union-find.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-03 03:35:38+09:00
+    - Last commit date: 2020-03-03 15:02:22+09:00
 
 
 
@@ -72,7 +72,7 @@ public:
 };
 
 /**
-* @brief Union Find
+* @title Union Find
 */
 ```
 {% endraw %}
@@ -107,7 +107,7 @@ public:
 };
 
 /**
-* @brief Union Find
+* @title Union Find
 */
 
 ```

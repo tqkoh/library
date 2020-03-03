@@ -30,7 +30,7 @@ layout: default
 <a href="../../../index.html">Back to top page</a>
 
 * <a href="{{ site.github.repository_url }}/blob/master/test/graph/warshall-floyd.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-03 12:55:17+09:00
+    - Last commit date: 2020-03-03 15:02:22+09:00
 
 
 * see: <a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C">http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C</a>
@@ -38,8 +38,8 @@ layout: default
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/lib/graph/graph-template.cpp.html">Graph Template <small>(lib/graph/graph-template.cpp)</small></a>
-* :heavy_check_mark: <a href="../../../library/lib/graph/warshall-floyd.cpp.html">Warshall Floyd <small>(lib/graph/warshall-floyd.cpp)</small></a>
+* :heavy_check_mark: <a href="../../../library/lib/graph/graph-template.cpp.html">Graph Template</a>
+* :heavy_check_mark: <a href="../../../library/lib/graph/warshall-floyd.cpp.html">Warshall Floyd</a>
 
 
 ## Code

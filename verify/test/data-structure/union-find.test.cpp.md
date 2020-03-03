@@ -30,7 +30,7 @@ layout: default
 <a href="../../../index.html">Back to top page</a>
 
 * <a href="{{ site.github.repository_url }}/blob/master/test/data-structure/union-find.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-03 12:55:17+09:00
+    - Last commit date: 2020-03-03 15:02:22+09:00
 
 
 * see: <a href="https://judge.yosupo.jp/problem/unionfind">https://judge.yosupo.jp/problem/unionfind</a>
@@ -38,7 +38,7 @@ layout: default
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/lib/data-structure/union-find.cpp.html">Union Find <small>(lib/data-structure/union-find.cpp)</small></a>
+* :heavy_check_mark: <a href="../../../library/lib/data-structure/union-find.cpp.html">Union Find</a>
 
 
 ## Code

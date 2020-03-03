@@ -25,13 +25,13 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: Warshall Floyd <small>(lib/graph/warshall-floyd.cpp)</small>
+# :heavy_check_mark: Warshall Floyd
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#6e267a37887a7dcb68cbf7008d6c7e48">lib/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/graph/warshall-floyd.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-03 03:58:47+09:00
+    - Last commit date: 2020-03-03 15:02:22+09:00
 
 
 
@@ -46,18 +46,18 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-void warshall_floyd(Matrix &g){
-	rep(k,g.size())rep(g.size())rep(j,g.size())chmin(g[i][j],g[i][k]+g[k][j]);
+void warshall_floyd(Matrix &g,length inf){
 	for(int k=0;k<g.size();++k){
 		for(int i=0;i<g.size();++i){
 			for(int j=0;j<g.size();++j){
+				if(g[i][k]==inf||g[k][j]==inf)continue;
 				g[i][j]=min(g[i][j],g[i][k]+g[k][j]);
 			}
 		}
 	}
 }
 /*
-* @brief Warshall Floyd
+* @title Warshall Floyd
 */
 ```
 {% endraw %}
@@ -66,18 +66,18 @@ void warshall_floyd(Matrix &g){
 {% raw %}
 ```cpp
 #line 1 "lib/graph/warshall-floyd.cpp"
-void warshall_floyd(Matrix &g){
-	rep(k,g.size())rep(g.size())rep(j,g.size())chmin(g[i][j],g[i][k]+g[k][j]);
+void warshall_floyd(Matrix &g,length inf){
 	for(int k=0;k<g.size();++k){
 		for(int i=0;i<g.size();++i){
 			for(int j=0;j<g.size();++j){
+				if(g[i][k]==inf||g[k][j]==inf)continue;
 				g[i][j]=min(g[i][j],g[i][k]+g[k][j]);
 			}
 		}
 	}
 }
 /*
-* @brief Warshall Floyd
+* @title Warshall Floyd
 */
 
 ```

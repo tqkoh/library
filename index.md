@@ -38,16 +38,16 @@ layout: default
 
 ### lib/data-structure
 
-* :heavy_check_mark: <a href="library/lib/data-structure/union-find.cpp.html">Union Find <small>(lib/data-structure/union-find.cpp)</small></a>
+* :heavy_check_mark: <a href="library/lib/data-structure/union-find.cpp.html">Union Find</a>
 
 
 <div id="6e267a37887a7dcb68cbf7008d6c7e48"></div>
 
 ### lib/graph
 
-* :heavy_check_mark: <a href="library/lib/graph/dijkstra.cpp.html">dijkstra <small>(lib/graph/dijkstra.cpp)</small></a>
-* :heavy_check_mark: <a href="library/lib/graph/graph-template.cpp.html">Graph Template <small>(lib/graph/graph-template.cpp)</small></a>
-* :heavy_check_mark: <a href="library/lib/graph/warshall-floyd.cpp.html">Warshall Floyd <small>(lib/graph/warshall-floyd.cpp)</small></a>
+* :heavy_check_mark: <a href="library/lib/graph/dijkstra.cpp.html">Dijkstra</a>
+* :heavy_check_mark: <a href="library/lib/graph/graph-template.cpp.html">Graph Template</a>
+* :heavy_check_mark: <a href="library/lib/graph/warshall-floyd.cpp.html">Warshall Floyd</a>
 
 
 ## Verify Files

@@ -25,13 +25,13 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: Graph Template <small>(lib/graph/graph-template.cpp)</small>
+# :heavy_check_mark: Graph Template
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#6e267a37887a7dcb68cbf7008d6c7e48">lib/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/graph/graph-template.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-03 12:55:17+09:00
+    - Last commit date: 2020-03-03 14:50:49+09:00
 
 
 
@@ -83,7 +83,7 @@ void e2m(Matrix& g,Edges edges,bool directed,length infinity){
 
 
 /*
-* @brief Graph Template
+* @title Graph Template
 */
 ```
 {% endraw %}
@@ -128,7 +128,7 @@ void e2m(Matrix& g,Edges edges,bool directed,length infinity){
 
 
 /*
-* @brief Graph Template
+* @title Graph Template
 */
 
 ```

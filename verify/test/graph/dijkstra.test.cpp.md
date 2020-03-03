@@ -30,7 +30,7 @@ layout: default
 <a href="../../../index.html">Back to top page</a>
 
 * <a href="{{ site.github.repository_url }}/blob/master/test/graph/dijkstra.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-03 12:55:17+09:00
+    - Last commit date: 2020-03-03 15:02:22+09:00
 
 
 * see: <a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A">http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A</a>
@@ -38,8 +38,8 @@ layout: default
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/lib/graph/dijkstra.cpp.html">dijkstra <small>(lib/graph/dijkstra.cpp)</small></a>
-* :heavy_check_mark: <a href="../../../library/lib/graph/graph-template.cpp.html">Graph Template <small>(lib/graph/graph-template.cpp)</small></a>
+* :heavy_check_mark: <a href="../../../library/lib/graph/dijkstra.cpp.html">Dijkstra</a>
+* :heavy_check_mark: <a href="../../../library/lib/graph/graph-template.cpp.html">Graph Template</a>
 
 
 ## Code
