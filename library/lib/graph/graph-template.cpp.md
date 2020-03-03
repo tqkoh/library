@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#6e267a37887a7dcb68cbf7008d6c7e48">lib/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/graph/graph-template.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-03 14:50:49+09:00
+    - Last commit date: 2020-03-03 17:35:57+09:00
 
 
 
@@ -62,14 +62,14 @@ using Matrix=vector<vector<length> >;
 
 void e2w(Weighted& g,Edges edges,bool directed){
 	for(auto& e:edges){
-		g[e.src].pb(e);
-		if(!directed)g[e.to].pb(edge(e.to,e.src,e.cost));
+		g[e.src].push_back(e);
+		if(!directed)g[e.to].push_back(edge(e.to,e.src,e.cost));
 	}
 }
 void e2u(UnWeighted& g,Edges edges,bool directed){
 	for(auto& e:edges){
-		g[e.src].pb(e.to);
-		if(!directed)g[e.to].pb(e.src);
+		g[e.src].push_back(e.to);
+		if(!directed)g[e.to].push_back(e.src);
 	}
 }
 void e2m(Matrix& g,Edges edges,bool directed,length infinity){
@@ -107,14 +107,14 @@ using Matrix=vector<vector<length> >;
 
 void e2w(Weighted& g,Edges edges,bool directed){
 	for(auto& e:edges){
-		g[e.src].pb(e);
-		if(!directed)g[e.to].pb(edge(e.to,e.src,e.cost));
+		g[e.src].push_back(e);
+		if(!directed)g[e.to].push_back(edge(e.to,e.src,e.cost));
 	}
 }
 void e2u(UnWeighted& g,Edges edges,bool directed){
 	for(auto& e:edges){
-		g[e.src].pb(e.to);
-		if(!directed)g[e.to].pb(e.src);
+		g[e.src].push_back(e.to);
+		if(!directed)g[e.to].push_back(e.src);
 	}
 }
 void e2m(Matrix& g,Edges edges,bool directed,length infinity){
