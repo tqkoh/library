@@ -10,5 +10,4 @@ void warshall_floyd(Matrix &g,length inf){
 }
 /*
 * @title Warshall Floyd
-* @brief 全頂点組の最短路を求めるアルゴリズム
 */

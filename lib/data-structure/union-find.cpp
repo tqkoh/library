@@ -25,5 +25,4 @@ public:
 
 /**
 * @title Union Find
-* @brief 集合の合併を扱うデータ構造
 */
