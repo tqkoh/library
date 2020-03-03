@@ -31,13 +31,14 @@ layout: default
 
 * category: <a href="../../../index.html#6e267a37887a7dcb68cbf7008d6c7e48">lib/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/graph/graph-template.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-03 03:58:47+09:00
+    - Last commit date: 2020-03-03 12:55:17+09:00
 
 
 
 
 ## Verified with
 
+* :heavy_check_mark: <a href="../../../verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
 * :heavy_check_mark: <a href="../../../verify/test/graph/warshall-floyd.test.cpp.html">test/graph/warshall-floyd.test.cpp</a>
 
 
@@ -58,6 +59,28 @@ using Edges=vector<edge>;
 using Weighted=vector<Edges>;
 using UnWeighted=vector<vector<int> >;
 using Matrix=vector<vector<length> >;
+
+void e2w(Weighted& g,Edges edges,bool directed){
+	for(auto& e:edges){
+		g[e.src].pb(e);
+		if(!directed)g[e.to].pb(edge(e.to,e.src,e.cost));
+	}
+}
+void e2u(UnWeighted& g,Edges edges,bool directed){
+	for(auto& e:edges){
+		g[e.src].pb(e.to);
+		if(!directed)g[e.to].pb(e.src);
+	}
+}
+void e2m(Matrix& g,Edges edges,bool directed,length infinity){
+	for(auto& e:g)e.resize(g.size(),infinity);
+	for(int i=0;i<g.size();++i)g[i][i]=0;
+	for(auto& e:edges){
+		g[e.src][e.to]=min(g[e.src][e.to],e.cost);
+		if(!directed)g[e.to][e.src]=min(g[e.to][e.src],e.cost);
+	}
+}
+
 
 /*
 * @brief Graph Template
@@ -81,6 +104,28 @@ using Edges=vector<edge>;
 using Weighted=vector<Edges>;
 using UnWeighted=vector<vector<int> >;
 using Matrix=vector<vector<length> >;
+
+void e2w(Weighted& g,Edges edges,bool directed){
+	for(auto& e:edges){
+		g[e.src].pb(e);
+		if(!directed)g[e.to].pb(edge(e.to,e.src,e.cost));
+	}
+}
+void e2u(UnWeighted& g,Edges edges,bool directed){
+	for(auto& e:edges){
+		g[e.src].pb(e.to);
+		if(!directed)g[e.to].pb(e.src);
+	}
+}
+void e2m(Matrix& g,Edges edges,bool directed,length infinity){
+	for(auto& e:g)e.resize(g.size(),infinity);
+	for(int i=0;i<g.size();++i)g[i][i]=0;
+	for(auto& e:edges){
+		g[e.src][e.to]=min(g[e.src][e.to],e.cost);
+		if(!directed)g[e.to][e.src]=min(g[e.to][e.src],e.cost);
+	}
+}
+
 
 /*
 * @brief Graph Template

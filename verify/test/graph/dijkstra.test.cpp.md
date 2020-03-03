@@ -25,21 +25,21 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: test/graph/warshall-floyd.test.cpp
+# :heavy_check_mark: test/graph/dijkstra.test.cpp
 
 <a href="../../../index.html">Back to top page</a>
 
-* <a href="{{ site.github.repository_url }}/blob/master/test/graph/warshall-floyd.test.cpp">View this file on GitHub</a>
+* <a href="{{ site.github.repository_url }}/blob/master/test/graph/dijkstra.test.cpp">View this file on GitHub</a>
     - Last commit date: 2020-03-03 12:55:17+09:00
 
 
-* see: <a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C">http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C</a>
+* see: <a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A">http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A</a>
 
 
 ## Depends on
 
+* :heavy_check_mark: <a href="../../../library/lib/graph/dijkstra.cpp.html">dijkstra <small>(lib/graph/dijkstra.cpp)</small></a>
 * :heavy_check_mark: <a href="../../../library/lib/graph/graph-template.cpp.html">Graph Template <small>(lib/graph/graph-template.cpp)</small></a>
-* :heavy_check_mark: <a href="../../../library/lib/graph/warshall-floyd.cpp.html">Warshall Floyd <small>(lib/graph/warshall-floyd.cpp)</small></a>
 
 
 ## Code
@@ -47,29 +47,21 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-#define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C"
+#define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A"
 #include "../template/template.cpp"
 #include "lib/graph/graph-template.cpp"
-#include "lib/graph/warshall-floyd.cpp"
+#include "lib/graph/dijkstra.cpp"
 
 int main(){
-	int V,E; cin>>V>>E;
-	vector<lint>s(E),t(E),d(E); for(int i=0;i<E;++i) cin>>s[i]>>t[i]>>d[i];
+	lint V,E,r; cin>>V>>E>>r;
+	vector<lint>s(E),t(E),d(E);  for(int i=0;i<E;++i) cin>>s[i]>>t[i]>>d[i];
 	Edges ge(E);
 	for(int i=0;i<E;++i)ge[i]=edge(s[i],t[i],d[i]);
-	Matrix g(V); e2m(g,ge,1,2*linf); //Edges to Matrix
+	Weighted g(V); e2w(g,ge,1); //Edges to Weighted
 
-	warshall_floyd(g);
-	bool ok=1;
-	for(int i=0;i<V;++i)if(g[i][i]<0)ok=0;
-	if(!ok)return cout<<"NEGATIVE CYCLE"<<endl,0;
-	for(int i=0;i<V;++i){
-		for(int j=0;j<V;++j){
-			if(g[i][j]>linf)cout<<"INF";
-			else cout<<g[i][j];
-			if(j!=V-1)cout<<" ";
-		}
-		cout<<endl;
+	for(auto& e:dijkstra(g,r).first){
+		if(e.dist==linf)cout<<"INF"<<endl;
+		else cout<<e.dist<<endl;
 	}
 }
 ```
