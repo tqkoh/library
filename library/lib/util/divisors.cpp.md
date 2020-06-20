@@ -25,20 +25,15 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :x: Warshall Floyd
+# :warning: Divisors
 
 <a href="../../../index.html">Back to top page</a>
 
-* category: <a href="../../../index.html#6e267a37887a7dcb68cbf7008d6c7e48">lib/graph</a>
-* <a href="{{ site.github.repository_url }}/blob/master/lib/graph/warshall-floyd.cpp">View this file on GitHub</a>
+* category: <a href="../../../index.html#76d75a8065c92efe3b83e817563c11ef">lib/util</a>
+* <a href="{{ site.github.repository_url }}/blob/master/lib/util/divisors.cpp">View this file on GitHub</a>
     - Last commit date: 2020-06-21 04:23:28+09:00
 
 
-
-
-## Verified with
-
-* :x: <a href="../../../verify/test/graph/warshall-floyd.test.cpp.html">test/graph/warshall-floyd.test.cpp</a>
 
 
 ## Code
@@ -46,21 +41,20 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-﻿void warshall_floyd(Matrix &g,length inf){
-	for(int k=0;k<g.size();++k){
-		for(int i=0;i<g.size();++i){
-			for(int j=0;j<g.size();++j){
-				if(g[i][k]==inf||g[k][j]==inf)continue;
-				g[i][j]=min(g[i][j],g[i][k]+g[k][j]);
-			}
+﻿set<lint>divisors(lint n){
+	set<lint>ret;
+	for(int i=1;i*i<=n;++i){
+		if(n%i==0){
+			ret.insert(i);
+			if(i*i!=n)ret.insert(n/i);
 		}
 	}
+	return ret;
 }
 
 /*
-* @title Warshall Floyd
-* @param[out] g[u][v] パス(u,v)の最短距離
-* @brief O(V**3)
+* @title Divisors
+* @param[out] n の約数の集合
 */
 ```
 {% endraw %}
@@ -68,22 +62,21 @@ layout: default
 <a id="bundled"></a>
 {% raw %}
 ```cpp
-#line 1 "lib/graph/warshall-floyd.cpp"
-﻿void warshall_floyd(Matrix &g,length inf){
-	for(int k=0;k<g.size();++k){
-		for(int i=0;i<g.size();++i){
-			for(int j=0;j<g.size();++j){
-				if(g[i][k]==inf||g[k][j]==inf)continue;
-				g[i][j]=min(g[i][j],g[i][k]+g[k][j]);
-			}
+#line 1 "lib/util/divisors.cpp"
+﻿set<lint>divisors(lint n){
+	set<lint>ret;
+	for(int i=1;i*i<=n;++i){
+		if(n%i==0){
+			ret.insert(i);
+			if(i*i!=n)ret.insert(n/i);
 		}
 	}
+	return ret;
 }
 
 /*
-* @title Warshall Floyd
-* @param[out] g[u][v] パス(u,v)の最短距離
-* @brief O(V**3)
+* @title Divisors
+* @param[out] n の約数の集合
 */
 
 ```
