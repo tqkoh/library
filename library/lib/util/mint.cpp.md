@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#76d75a8065c92efe3b83e817563c11ef">lib/util</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/util/mint.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-21 04:23:28+09:00
+    - Last commit date: 2020-06-21 04:48:22+09:00
 
 
 
@@ -107,7 +107,7 @@ md_tmp ostream& operator<<(ostream& os,const modint<md>& m){
 	return os<<m.a;
 }
 #ifndef _AOJ_
-inline modint<> operator""m(const unsigned long long n){ return modint<>(n); }
+// inline modint<> operator""m(const unsigned long long n){ return modint<>(n); }
 using mint = modint<>;
 #endif
 
@@ -182,7 +182,7 @@ md_tmp ostream& operator<<(ostream& os,const modint<md>& m){
 	return os<<m.a;
 }
 #ifndef _AOJ_
-inline modint<> operator""m(const unsigned long long n){ return modint<>(n); }
+// inline modint<> operator""m(const unsigned long long n){ return modint<>(n); }
 using mint = modint<>;
 #endif
 

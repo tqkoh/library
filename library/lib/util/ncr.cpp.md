@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#76d75a8065c92efe3b83e817563c11ef">lib/util</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/util/ncr.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-21 04:23:28+09:00
+    - Last commit date: 2020-06-21 04:48:22+09:00
 
 
 
@@ -63,14 +63,14 @@ lint ncri(lint n,lint r){
 md_tmp class Bigncr{
 	lint m;
 public:
-	mint fa[10000010],rfa[10000010];
+	modint<md> fa[10000010],rfa[10000010];
 	Bigncr(lint n):m(n){
 		fa[0] = 1;
 		for(int i=1;i<m;++i)fa[i] = (fa[i-1]*i);
-		rfa[m-1] = mint(1)/fa[m-1];
+		rfa[m-1] = modint<md>(1)/fa[m-1];
 		for(int i=m-2;i>=0;--i)rfa[i] = rfa[i+1]*(i+1);
 	}
-	inline mint get(lint n,lint r){ if(n<r||n<0||r<0)return 0m; return(fa[n]*rfa[r]*rfa[n-r]); }
+	inline modint<md> get(lint n,lint r){ if(n<r||n<0||r<0)return 0m; return(fa[n]*rfa[r]*rfa[n-r]); }
 };
 Bigncr<> c(10000010);
 
@@ -145,7 +145,7 @@ md_tmp ostream& operator<<(ostream& os,const modint<md>& m){
 	return os<<m.a;
 }
 #ifndef _AOJ_
-inline modint<> operator""m(const unsigned long long n){ return modint<>(n); }
+// inline modint<> operator""m(const unsigned long long n){ return modint<>(n); }
 using mint = modint<>;
 #endif
 
@@ -169,14 +169,14 @@ lint ncri(lint n,lint r){
 md_tmp class Bigncr{
 	lint m;
 public:
-	mint fa[10000010],rfa[10000010];
+	modint<md> fa[10000010],rfa[10000010];
 	Bigncr(lint n):m(n){
 		fa[0] = 1;
 		for(int i=1;i<m;++i)fa[i] = (fa[i-1]*i);
-		rfa[m-1] = mint(1)/fa[m-1];
+		rfa[m-1] = modint<md>(1)/fa[m-1];
 		for(int i=m-2;i>=0;--i)rfa[i] = rfa[i+1]*(i+1);
 	}
-	inline mint get(lint n,lint r){ if(n<r||n<0||r<0)return 0m; return(fa[n]*rfa[r]*rfa[n-r]); }
+	inline modint<md> get(lint n,lint r){ if(n<r||n<0||r<0)return 0m; return(fa[n]*rfa[r]*rfa[n-r]); }
 };
 Bigncr<> c(10000010);
 
