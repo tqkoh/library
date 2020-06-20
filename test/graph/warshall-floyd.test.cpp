@@ -1,4 +1,4 @@
-#define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C"
+﻿#define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C"
 #include "test/template/template.cpp"
 #include "lib/graph/graph-template.cpp"
 #include "lib/graph/warshall-floyd.cpp"

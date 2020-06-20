@@ -1,4 +1,4 @@
-using length=lint;
+﻿using length=lint;
 struct edge{
 	int src,to;
 	length cost;

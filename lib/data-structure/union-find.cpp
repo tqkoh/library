@@ -1,4 +1,4 @@
-class UnionFind{
+﻿class UnionFind{
 public:
 	vector<int>par,rank;
 	UnionFind(int n){

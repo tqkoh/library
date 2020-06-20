@@ -1,4 +1,4 @@
-struct status{
+﻿struct status{
 	lint dist;
 	status(lint n){
 		if(!n)dist=0; //initial
@@ -37,4 +37,5 @@ pair<vector<status>,vector<int>> dijkstra(Weighted g,int s){
 
 /*
 * @title Dijkstra
+* @brief 
 */
