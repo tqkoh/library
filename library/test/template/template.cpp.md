@@ -25,21 +25,22 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :x: test/data-structure/union-find.test.cpp
+# :x: test/template/template.cpp
 
 <a href="../../../index.html">Back to top page</a>
 
-* category: <a href="../../../index.html#c475b539faf362c96f7dec3abb868ed7">test/data-structure</a>
-* <a href="{{ site.github.repository_url }}/blob/master/test/data-structure/union-find.test.cpp">View this file on GitHub</a>
+* category: <a href="../../../index.html#3bd26683cf387f4976fcd993c9e66cb5">test/template</a>
+* <a href="{{ site.github.repository_url }}/blob/master/test/template/template.cpp">View this file on GitHub</a>
     - Last commit date: 2020-06-21 04:23:28+09:00
 
 
 
 
-## Depends on
+## Verified with
 
-* :x: <a href="../../../library/lib/data-structure/union-find.cpp.html">Union Find</a>
-* :x: <a href="../../../library/test/template/template.cpp.html">test/template/template.cpp</a>
+* :x: <a href="../../../verify/test/data-structure/union-find.test.cpp.html">test/data-structure/union-find.test.cpp</a>
+* :x: <a href="../../../verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
+* :x: <a href="../../../verify/test/graph/warshall-floyd.test.cpp.html">test/graph/warshall-floyd.test.cpp</a>
 
 
 ## Code
@@ -47,19 +48,22 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-﻿#define PROBLEM "https://judge.yosupo.jp/problem/unionfind"
-#include "test/template/template.cpp"
-#include "lib/data-structure/union-find.cpp"
+﻿#define IGNORE
+#include "bits/stdc++.h"
+using namespace std;
 
-int main(){
-	lint n,q; cin>>n>>q;
-	UnionFind uf(n);
-	while(q--){
-		lint t,u,v; cin>>t>>u>>v;
-		if(t)cout<<uf.same(u,v)<<endl;
-		else uf.unite(u,v);
+using lint=int64_t;
+const lint linf=1ll<<61;
+const lint mod=1000000007;
+
+struct Start{
+	Start(){
+		cin.tie(nullptr);
+		ios::sync_with_stdio(0);
+		cout<<fixed<<setprecision(10);
 	}
-}
+} __start;
+
 ```
 {% endraw %}
 
@@ -71,8 +75,6 @@ Traceback (most recent call last):
     bundled_code = language.bundle(self.file_class.file_path, basedir=pathlib.Path.cwd())
   File "/opt/hostedtoolcache/Python/3.8.3/x64/lib/python3.8/site-packages/onlinejudge_verify/languages/cplusplus.py", line 185, in bundle
     bundler.update(path)
-  File "/opt/hostedtoolcache/Python/3.8.3/x64/lib/python3.8/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py", line 307, in update
-    self.update(self._resolve(pathlib.Path(included), included_from=path))
   File "/opt/hostedtoolcache/Python/3.8.3/x64/lib/python3.8/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py", line 307, in update
     self.update(self._resolve(pathlib.Path(included), included_from=path))
   File "/opt/hostedtoolcache/Python/3.8.3/x64/lib/python3.8/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py", line 187, in _resolve
