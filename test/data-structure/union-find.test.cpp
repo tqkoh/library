@@ -1,4 +1,5 @@
 ﻿#define PROBLEM "https://judge.yosupo.jp/problem/unionfind"
+#define _AOJ_
 #include "test/template/template.cpp"
 #include "lib/data-structure/union-find.cpp"
 

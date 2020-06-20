@@ -15,14 +15,14 @@ lint ncri(lint n,lint r){
 md_tmp class Bigncr{
 	lint m;
 public:
-	mint fa[10000010],rfa[10000010];
+	modint<md> fa[10000010],rfa[10000010];
 	Bigncr(lint n):m(n){
 		fa[0] = 1;
 		for(int i=1;i<m;++i)fa[i] = (fa[i-1]*i);
-		rfa[m-1] = mint(1)/fa[m-1];
+		rfa[m-1] = modint<md>(1)/fa[m-1];
 		for(int i=m-2;i>=0;--i)rfa[i] = rfa[i+1]*(i+1);
 	}
-	inline mint get(lint n,lint r){ if(n<r||n<0||r<0)return 0m; return(fa[n]*rfa[r]*rfa[n-r]); }
+	inline modint<md> get(lint n,lint r){ if(n<r||n<0||r<0)return 0m; return(fa[n]*rfa[r]*rfa[n-r]); }
 };
 Bigncr<> c(10000010);
 

@@ -59,7 +59,7 @@ md_tmp ostream& operator<<(ostream& os,const modint<md>& m){
 	return os<<m.a;
 }
 #ifndef _AOJ_
-inline modint<> operator""m(const unsigned long long n){ return modint<>(n); }
+// inline modint<> operator""m(const unsigned long long n){ return modint<>(n); }
 using mint = modint<>;
 #endif
 

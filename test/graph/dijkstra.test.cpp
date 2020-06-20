@@ -1,4 +1,5 @@
 ﻿#define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A"
+#define _AOJ_
 #include "test/template/template.cpp"
 #include "lib/graph/graph-template.cpp"
 #include "lib/graph/dijkstra.cpp"
