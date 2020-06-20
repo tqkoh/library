@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#baa37bfd168b079b758c0db816f7295f">test/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/test/graph/warshall-floyd.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-21 04:23:28+09:00
+    - Last commit date: 2020-06-21 04:48:22+09:00
 
 
 
@@ -49,6 +49,7 @@ layout: default
 {% raw %}
 ```cpp
 ﻿#define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C"
+#define _AOJ_
 #include "test/template/template.cpp"
 #include "lib/graph/graph-template.cpp"
 #include "lib/graph/warshall-floyd.cpp"
