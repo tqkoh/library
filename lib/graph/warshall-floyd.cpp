@@ -8,6 +8,9 @@
 		}
 	}
 }
+
 /*
 * @title Warshall Floyd
+* @param[out] g[u][v] パス(u,v)の最短距離
+* @brief O(V**3)
 */

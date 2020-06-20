@@ -37,5 +37,7 @@ pair<vector<status>,vector<int>> dijkstra(Weighted g,int s){
 
 /*
 * @title Dijkstra
-* @brief 
+* @param[in] g 負辺のないグラフ, s 始点
+* @param[out] (s から各頂点への最短パスの長さ, 前の頂点番号) 
+* @brief O(E log V)
 */

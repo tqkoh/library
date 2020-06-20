@@ -11,5 +11,5 @@
 
 /*
 * @title Divisors
-* @brief n の約数の集合を返す
+* @param[out] n の約数の集合
 */
