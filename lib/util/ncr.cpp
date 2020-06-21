@@ -1,4 +1,5 @@
-﻿#include "lib/util/mint.cpp"
+﻿#define IGNORE
+#include "lib/util/mint.cpp"
 
 md_tmp modint<md> ncr(lint n,lint r){
 	if(n<r||n<0||r<0)return modint<md>(0);

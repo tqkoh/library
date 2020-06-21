@@ -1,4 +1,5 @@
-﻿#define md_tmp template<uint_fast64_t md=mod>
+﻿#define IGNORE
+#define md_tmp template<uint_fast64_t md=mod>
 md_tmp class modint{
 public:
 	uint_fast64_t a;
