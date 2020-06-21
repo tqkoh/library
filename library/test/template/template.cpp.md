@@ -25,22 +25,22 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :x: test/template/template.cpp
+# :heavy_check_mark: test/template/template.cpp
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#3bd26683cf387f4976fcd993c9e66cb5">test/template</a>
 * <a href="{{ site.github.repository_url }}/blob/master/test/template/template.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-21 04:23:28+09:00
+    - Last commit date: 2020-03-03 12:55:17+09:00
 
 
 
 
 ## Verified with
 
-* :x: <a href="../../../verify/test/data-structure/union-find.test.cpp.html">test/data-structure/union-find.test.cpp</a>
-* :x: <a href="../../../verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
-* :x: <a href="../../../verify/test/graph/warshall-floyd.test.cpp.html">test/graph/warshall-floyd.test.cpp</a>
+* :heavy_check_mark: <a href="../../../verify/test/data-structure/union-find.test.cpp.html">test/data-structure/union-find.test.cpp</a>
+* :heavy_check_mark: <a href="../../../verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
+* :heavy_check_mark: <a href="../../../verify/test/graph/warshall-floyd.test.cpp.html">test/graph/warshall-floyd.test.cpp</a>
 
 
 ## Code
@@ -48,13 +48,12 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-﻿#define IGNORE
+#define IGNORE
 #include "bits/stdc++.h"
 using namespace std;
 
 using lint=int64_t;
 const lint linf=1ll<<61;
-const lint mod=1000000007;
 
 struct Start{
 	Start(){

@@ -38,38 +38,29 @@ layout: default
 
 ### lib/data-structure
 
-* :x: <a href="library/lib/data-structure/union-find.cpp.html">Union Find</a>
+* :heavy_check_mark: <a href="library/lib/data-structure/union-find.cpp.html">Union Find</a>
 
 
 <div id="6e267a37887a7dcb68cbf7008d6c7e48"></div>
 
 ### lib/graph
 
-* :x: <a href="library/lib/graph/dijkstra.cpp.html">Dijkstra</a>
-* :x: <a href="library/lib/graph/graph-template.cpp.html">Graph Template</a>
-* :x: <a href="library/lib/graph/warshall-floyd.cpp.html">Warshall Floyd</a>
-
-
-<div id="76d75a8065c92efe3b83e817563c11ef"></div>
-
-### lib/util
-
-* :warning: <a href="library/lib/util/divisors.cpp.html">Divisors</a>
-* :warning: <a href="library/lib/util/mint.cpp.html">Mint</a>
-* :warning: <a href="library/lib/util/ncr.cpp.html">Ncr</a>
+* :heavy_check_mark: <a href="library/lib/graph/dijkstra.cpp.html">Dijkstra</a>
+* :heavy_check_mark: <a href="library/lib/graph/graph-template.cpp.html">Graph Template</a>
+* :heavy_check_mark: <a href="library/lib/graph/warshall-floyd.cpp.html">Warshall Floyd</a>
 
 
 <div id="3bd26683cf387f4976fcd993c9e66cb5"></div>
 
 ### test/template
 
-* :x: <a href="library/test/template/template.cpp.html">test/template/template.cpp</a>
+* :heavy_check_mark: <a href="library/test/template/template.cpp.html">test/template/template.cpp</a>
 
 
 ## Verify Files
 
-* :x: <a href="verify/test/data-structure/union-find.test.cpp.html">test/data-structure/union-find.test.cpp</a>
-* :x: <a href="verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
-* :x: <a href="verify/test/graph/warshall-floyd.test.cpp.html">test/graph/warshall-floyd.test.cpp</a>
+* :heavy_check_mark: <a href="verify/test/data-structure/union-find.test.cpp.html">test/data-structure/union-find.test.cpp</a>
+* :heavy_check_mark: <a href="verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
+* :heavy_check_mark: <a href="verify/test/graph/warshall-floyd.test.cpp.html">test/graph/warshall-floyd.test.cpp</a>
 
 

@@ -25,21 +25,21 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :x: Graph Template
+# :heavy_check_mark: Graph Template
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#6e267a37887a7dcb68cbf7008d6c7e48">lib/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/graph/graph-template.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-21 04:23:28+09:00
+    - Last commit date: 2020-03-03 19:00:32+09:00
 
 
 
 
 ## Verified with
 
-* :x: <a href="../../../verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
-* :x: <a href="../../../verify/test/graph/warshall-floyd.test.cpp.html">test/graph/warshall-floyd.test.cpp</a>
+* :heavy_check_mark: <a href="../../../verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
+* :heavy_check_mark: <a href="../../../verify/test/graph/warshall-floyd.test.cpp.html">test/graph/warshall-floyd.test.cpp</a>
 
 
 ## Code
@@ -47,7 +47,7 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-﻿using length=lint;
+using length=lint;
 struct edge{
 	int src,to;
 	length cost;
@@ -80,6 +80,7 @@ void e2m(Matrix& g,Edges edges,bool directed,length infinity){
 		if(!directed)g[e.to][e.src]=min(g[e.to][e.src],e.cost);
 	}
 }
+
 
 /*
 * @title Graph Template
@@ -91,7 +92,7 @@ void e2m(Matrix& g,Edges edges,bool directed,length infinity){
 {% raw %}
 ```cpp
 #line 1 "lib/graph/graph-template.cpp"
-﻿using length=lint;
+using length=lint;
 struct edge{
 	int src,to;
 	length cost;
@@ -124,6 +125,7 @@ void e2m(Matrix& g,Edges edges,bool directed,length infinity){
 		if(!directed)g[e.to][e.src]=min(g[e.to][e.src],e.cost);
 	}
 }
+
 
 /*
 * @title Graph Template
