@@ -45,8 +45,8 @@ layout: default
 
 ### lib/graph
 
-* :x: <a href="library/lib/graph/dijkstra.cpp.html">Dijkstra</a>
-* :question: <a href="library/lib/graph/graph-template.cpp.html">Graph Template</a>
+* :heavy_check_mark: <a href="library/lib/graph/dijkstra.cpp.html">Dijkstra</a>
+* :heavy_check_mark: <a href="library/lib/graph/graph-template.cpp.html">Graph Template</a>
 * :heavy_check_mark: <a href="library/lib/graph/warshall-floyd.cpp.html">Warshall Floyd</a>
 
 
@@ -54,13 +54,13 @@ layout: default
 
 ### test/template
 
-* :question: <a href="library/test/template/template.cpp.html">test/template/template.cpp</a>
+* :heavy_check_mark: <a href="library/test/template/template.cpp.html">test/template/template.cpp</a>
 
 
 ## Verify Files
 
 * :heavy_check_mark: <a href="verify/test/data-structure/union-find.test.cpp.html">test/data-structure/union-find.test.cpp</a>
-* :x: <a href="verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
+* :heavy_check_mark: <a href="verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
 * :heavy_check_mark: <a href="verify/test/graph/warshall-floyd.test.cpp.html">test/graph/warshall-floyd.test.cpp</a>
 
 

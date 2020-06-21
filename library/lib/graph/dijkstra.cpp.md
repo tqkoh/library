@@ -25,20 +25,20 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :x: Dijkstra
+# :heavy_check_mark: Dijkstra
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#6e267a37887a7dcb68cbf7008d6c7e48">lib/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/graph/dijkstra.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-21 18:54:22+09:00
+    - Last commit date: 2020-03-03 15:02:22+09:00
 
 
 
 
 ## Verified with
 
-* :x: <a href="../../../verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
+* :heavy_check_mark: <a href="../../../verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
 
 
 ## Code
@@ -46,7 +46,7 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-﻿struct status{
+struct status{
 	lint dist;
 	status(lint n){
 		if(!n)dist=0; //initial
@@ -93,7 +93,7 @@ pair<vector<status>,vector<int>> dijkstra(Weighted g,int s){
 {% raw %}
 ```cpp
 #line 1 "lib/graph/dijkstra.cpp"
-﻿struct status{
+struct status{
 	lint dist;
 	status(lint n){
 		if(!n)dist=0; //initial
