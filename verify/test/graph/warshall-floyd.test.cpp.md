@@ -38,9 +38,9 @@ layout: default
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/lib/graph/graph-template.cpp.html">Graph Template</a>
+* :question: <a href="../../../library/lib/graph/graph-template.cpp.html">Graph Template</a>
 * :heavy_check_mark: <a href="../../../library/lib/graph/warshall-floyd.cpp.html">Warshall Floyd</a>
-* :heavy_check_mark: <a href="../../../library/test/template/template.cpp.html">test/template/template.cpp</a>
+* :question: <a href="../../../library/test/template/template.cpp.html">test/template/template.cpp</a>
 
 
 ## Code
