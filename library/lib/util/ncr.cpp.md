@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#76d75a8065c92efe3b83e817563c11ef">lib/util</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/util/ncr.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-21 04:48:22+09:00
+    - Last commit date: 2020-06-21 13:46:24+09:00
 
 
 
@@ -151,6 +151,7 @@ using mint = modint<>;
 
 /*
 * @title Mint
+* @see https://noshi91.hatenablog.com/entry/2019/03/31/174006
 */
 #line 2 "lib/util/ncr.cpp"
 

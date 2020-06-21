@@ -31,9 +31,10 @@ layout: default
 
 * category: <a href="../../../index.html#76d75a8065c92efe3b83e817563c11ef">lib/util</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/util/mint.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-21 04:48:22+09:00
+    - Last commit date: 2020-06-21 13:46:24+09:00
 
 
+* see: <a href="https://noshi91.hatenablog.com/entry/2019/03/31/174006">https://noshi91.hatenablog.com/entry/2019/03/31/174006</a>
 
 
 ## Required by
@@ -113,7 +114,9 @@ using mint = modint<>;
 
 /*
 * @title Mint
+* @see https://noshi91.hatenablog.com/entry/2019/03/31/174006
 */
+
 ```
 {% endraw %}
 
@@ -188,6 +191,7 @@ using mint = modint<>;
 
 /*
 * @title Mint
+* @see https://noshi91.hatenablog.com/entry/2019/03/31/174006
 */
 
 ```
