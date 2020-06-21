@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#76d75a8065c92efe3b83e817563c11ef">lib/util</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/util/ncr.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-21 13:46:24+09:00
+    - Last commit date: 2020-06-21 17:50:22+09:00
 
 
 
@@ -46,7 +46,8 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-﻿#include "lib/util/mint.cpp"
+﻿#define IGNORE
+#include "lib/util/mint.cpp"
 
 md_tmp modint<md> ncr(lint n,lint r){
 	if(n<r||n<0||r<0)return modint<md>(0);
@@ -83,8 +84,11 @@ Bigncr<> c(10000010);
 <a id="bundled"></a>
 {% raw %}
 ```cpp
+#line 1 "lib/util/ncr.cpp"
+﻿#define IGNORE
 #line 1 "lib/util/mint.cpp"
-﻿#define md_tmp template<uint_fast64_t md=mod>
+﻿#define IGNORE
+#define md_tmp template<uint_fast64_t md=mod>
 md_tmp class modint{
 public:
 	uint_fast64_t a;
@@ -153,7 +157,7 @@ using mint = modint<>;
 * @title Mint
 * @see https://noshi91.hatenablog.com/entry/2019/03/31/174006
 */
-#line 2 "lib/util/ncr.cpp"
+#line 3 "lib/util/ncr.cpp"
 
 md_tmp modint<md> ncr(lint n,lint r){
 	if(n<r||n<0||r<0)return modint<md>(0);

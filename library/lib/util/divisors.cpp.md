@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#76d75a8065c92efe3b83e817563c11ef">lib/util</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/util/divisors.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-21 04:23:28+09:00
+    - Last commit date: 2020-06-21 17:48:07+09:00
 
 
 
@@ -41,7 +41,8 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-﻿set<lint>divisors(lint n){
+﻿#define IGNORE
+set<lint>divisors(lint n){
 	set<lint>ret;
 	for(int i=1;i*i<=n;++i){
 		if(n%i==0){
@@ -63,7 +64,8 @@ layout: default
 {% raw %}
 ```cpp
 #line 1 "lib/util/divisors.cpp"
-﻿set<lint>divisors(lint n){
+﻿#define IGNORE
+set<lint>divisors(lint n){
 	set<lint>ret;
 	for(int i=1;i*i<=n;++i){
 		if(n%i==0){
