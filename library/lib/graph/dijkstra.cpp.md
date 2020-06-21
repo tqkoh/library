@@ -31,10 +31,9 @@ layout: default
 
 * category: <a href="../../../index.html#6e267a37887a7dcb68cbf7008d6c7e48">lib/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/graph/dijkstra.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-21 18:44:56+09:00
+    - Last commit date: 2020-06-21 18:54:22+09:00
 
 
-* see: <a href="https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%A4%E3%82%AF%E3%82%B9%E3%83%88%E3%83%A9%E6%B3%95">https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%A4%E3%82%AF%E3%82%B9%E3%83%88%E3%83%A9%E6%B3%95</a>
 
 
 ## Verified with
@@ -86,8 +85,6 @@ pair<vector<status>,vector<int>> dijkstra(Weighted g,int s){
 
 /*
 * @title Dijkstra
-* @docs docs/data-structure/dijkstra.md
-* @see https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%A4%E3%82%AF%E3%82%B9%E3%83%88%E3%83%A9%E6%B3%95
 */
 ```
 {% endraw %}
@@ -135,8 +132,6 @@ pair<vector<status>,vector<int>> dijkstra(Weighted g,int s){
 
 /*
 * @title Dijkstra
-* @docs docs/data-structure/dijkstra.md
-* @see https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%A4%E3%82%AF%E3%82%B9%E3%83%88%E3%83%A9%E6%B3%95
 */
 
 ```
