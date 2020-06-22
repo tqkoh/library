@@ -13,7 +13,6 @@ status operator+(status cur,length& cost){
 	return cur;
 }
 
-
 pair<vector<status>,vector<int>> dijkstra(Weighted g,int s){
 	vector<int> prv(g.size());
 	vector<status> d(g.size(),linf);
