@@ -36,4 +36,5 @@ pair<vector<status>,vector<int>> dijkstra(Weighted g,int s){
 
 /*
 * @title Dijkstra
+* @docs docs/
 */
