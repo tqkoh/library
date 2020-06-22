@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#6e267a37887a7dcb68cbf7008d6c7e48">lib/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/graph/graph-template.hpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-22 13:29:24+09:00
+    - Last commit date: 2020-06-22 16:37:39+09:00
 
 
 
@@ -47,6 +47,7 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
+#pragma once
 using length=lint;
 struct edge{
 	int src,to;
@@ -85,13 +86,14 @@ void e2m(Matrix& g,Edges edges,bool directed,length infinity){
 /*
 * @title Graph Template
 */
+
 ```
 {% endraw %}
 
 <a id="bundled"></a>
 {% raw %}
 ```cpp
-#line 1 "lib/graph/graph-template.hpp"
+#line 2 "lib/graph/graph-template.hpp"
 using length=lint;
 struct edge{
 	int src,to;

@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#3bd26683cf387f4976fcd993c9e66cb5">test/template</a>
 * <a href="{{ site.github.repository_url }}/blob/master/test/template/template.hpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-22 13:29:24+09:00
+    - Last commit date: 2020-06-22 16:37:39+09:00
 
 
 
@@ -54,6 +54,7 @@ using namespace std;
 
 using lint=int64_t;
 const lint linf=1ll<<61;
+const lint mod=1000000007;
 
 struct Start{
 	Start(){

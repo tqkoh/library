@@ -31,10 +31,13 @@ layout: default
 
 * category: <a href="../../../index.html#6e267a37887a7dcb68cbf7008d6c7e48">lib/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/graph/dijkstra.hpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-22 15:51:59+09:00
+    - Last commit date: 2020-06-22 16:37:39+09:00
 
 
 
+
+- 負辺のないグラフ g に対して、(s から各頂点への最短パスの長さ, 前の頂点)を求める 
+- 時間計算量 O(E log V)
 
 ## Verified with
 
@@ -46,6 +49,7 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
+#pragma once
 struct status{
 	lint dist;
 	status(lint n){
@@ -84,15 +88,16 @@ pair<vector<status>,vector<int>> dijkstra(Weighted g,int s){
 
 /*
 * @title Dijkstra
-* @docs docs/dijkstra.md
+* @docs docs/graph/dijkstra.md
 */
+
 ```
 {% endraw %}
 
 <a id="bundled"></a>
 {% raw %}
 ```cpp
-#line 1 "lib/graph/dijkstra.hpp"
+#line 2 "lib/graph/dijkstra.hpp"
 struct status{
 	lint dist;
 	status(lint n){
@@ -131,7 +136,7 @@ pair<vector<status>,vector<int>> dijkstra(Weighted g,int s){
 
 /*
 * @title Dijkstra
-* @docs docs/dijkstra.md
+* @docs docs/graph/dijkstra.md
 */
 
 ```

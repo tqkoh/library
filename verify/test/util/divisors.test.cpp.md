@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#b474f495c8582ac5f92778a42ae814fa">test/util</a>
 * <a href="{{ site.github.repository_url }}/blob/master/test/util/divisors.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-22 15:40:35+09:00
+    - Last commit date: 2020-06-22 16:37:39+09:00
 
 
 * see: <a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_3_D">http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_3_D</a>
@@ -58,6 +58,7 @@ int main(){
 	for(auto e:s)ans+=a<=e&&e<=b;
 	cout<<ans<<endl;
 }
+
 ```
 {% endraw %}
 

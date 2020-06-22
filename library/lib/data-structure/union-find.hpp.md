@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#cbed23bc82f8d451042dd45b42d995ac">lib/data-structure</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/data-structure/union-find.hpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-22 13:29:24+09:00
+    - Last commit date: 2020-06-22 16:37:39+09:00
 
 
 
@@ -46,6 +46,7 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
+#pragma once
 class UnionFind{
 public:
 	vector<int>par,rank;
@@ -74,13 +75,14 @@ public:
 /**
 * @title Union Find
 */
+
 ```
 {% endraw %}
 
 <a id="bundled"></a>
 {% raw %}
 ```cpp
-#line 1 "lib/data-structure/union-find.hpp"
+#line 2 "lib/data-structure/union-find.hpp"
 class UnionFind{
 public:
 	vector<int>par,rank;

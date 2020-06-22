@@ -25,20 +25,15 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: Divisors
+# :warning: Ncr O(r)
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#76d75a8065c92efe3b83e817563c11ef">lib/util</a>
-* <a href="{{ site.github.repository_url }}/blob/master/lib/util/divisors.hpp">View this file on GitHub</a>
+* <a href="{{ site.github.repository_url }}/blob/master/lib/util/ncr-or.hpp">View this file on GitHub</a>
     - Last commit date: 2020-06-22 16:37:39+09:00
 
 
-
-
-## Verified with
-
-* :heavy_check_mark: <a href="../../../verify/test/util/divisors.test.cpp.html">test/util/divisors.test.cpp</a>
 
 
 ## Code
@@ -47,19 +42,16 @@ layout: default
 {% raw %}
 ```cpp
 #pragma once
-set<lint>divisors(lint n){
-	set<lint>ret;
-	for(int i=1; i*i<=n; ++i){
-		if(n%i==0){
-			ret.insert(i);
-			if(i*i!=n)ret.insert(n/i);
-		}
-	}
-	return ret;
+template<class Int,uint_fast64_t md=mod>
+Int ncr(lint n,lint r){
+	if(n<r||n<0||r<0)return Int(0);
+	Int ncr_res=1,ncr_div=1;
+	for(int i=0; i<r; ++i)ncr_res*=(n-i),ncr_div*=(r-i);
+	return ncr_res/ncr_div;
 }
 
 /*
-* @title Divisors
+* @title Ncr O(r)
 */
 
 ```
@@ -68,20 +60,17 @@ set<lint>divisors(lint n){
 <a id="bundled"></a>
 {% raw %}
 ```cpp
-#line 2 "lib/util/divisors.hpp"
-set<lint>divisors(lint n){
-	set<lint>ret;
-	for(int i=1; i*i<=n; ++i){
-		if(n%i==0){
-			ret.insert(i);
-			if(i*i!=n)ret.insert(n/i);
-		}
-	}
-	return ret;
+#line 2 "lib/util/ncr-or.hpp"
+template<class Int,uint_fast64_t md=mod>
+Int ncr(lint n,lint r){
+	if(n<r||n<0||r<0)return Int(0);
+	Int ncr_res=1,ncr_div=1;
+	for(int i=0; i<r; ++i)ncr_res*=(n-i),ncr_div*=(r-i);
+	return ncr_res/ncr_div;
 }
 
 /*
-* @title Divisors
+* @title Ncr O(r)
 */
 
 ```
