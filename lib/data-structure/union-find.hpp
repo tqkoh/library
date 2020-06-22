@@ -1,3 +1,4 @@
+#pragma once
 class UnionFind{
 public:
 	vector<int>par,rank;

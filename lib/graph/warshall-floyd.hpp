@@ -1,3 +1,4 @@
+#pragma once
 void warshall_floyd(Matrix &g,length inf){
 	for(int k=0;k<g.size();++k){
 		for(int i=0;i<g.size();++i){

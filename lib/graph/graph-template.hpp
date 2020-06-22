@@ -1,3 +1,4 @@
+#pragma once
 using length=lint;
 struct edge{
 	int src,to;

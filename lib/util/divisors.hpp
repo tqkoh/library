@@ -1,3 +1,4 @@
+#pragma once
 set<lint>divisors(lint n){
 	set<lint>ret;
 	for(int i=1; i*i<=n; ++i){

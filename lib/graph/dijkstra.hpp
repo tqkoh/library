@@ -1,3 +1,4 @@
+#pragma once
 struct status{
 	lint dist;
 	status(lint n){
@@ -36,5 +37,5 @@ pair<vector<status>,vector<int>> dijkstra(Weighted g,int s){
 
 /*
 * @title Dijkstra
-* @docs docs/dijkstra.md
+* @docs docs/graph/dijkstra.md
 */
