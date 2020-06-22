@@ -25,22 +25,22 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: test/graph/warshall-floyd.test.cpp
+# :x: test/graph/warshall-floyd.test.cpp
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#baa37bfd168b079b758c0db816f7295f">test/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/test/graph/warshall-floyd.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-03 19:00:32+09:00
+    - Last commit date: 2020-06-22 13:08:10+09:00
 
 
 
 
 ## Depends on
 
-* :question: <a href="../../../library/lib/graph/graph-template.cpp.html">Graph Template</a>
-* :heavy_check_mark: <a href="../../../library/lib/graph/warshall-floyd.cpp.html">Warshall Floyd</a>
-* :question: <a href="../../../library/test/template/template.cpp.html">test/template/template.cpp</a>
+* :x: <a href="../../../library/lib/graph/graph-template.cpp.html">Graph Template</a>
+* :x: <a href="../../../library/lib/graph/warshall-floyd.cpp.html">Warshall Floyd</a>
+* :x: <a href="../../../library/test/template/template.cpp.html">test/template/template.cpp</a>
 
 
 ## Code
@@ -49,9 +49,9 @@ layout: default
 {% raw %}
 ```cpp
 #define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C"
-#include "test/template/template.cpp"
-#include "lib/graph/graph-template.cpp"
-#include "lib/graph/warshall-floyd.cpp"
+#include "../../test/template/template.cpp"
+#include "../../lib/graph/graph-template.cpp"
+#include "../../lib/graph/warshall-floyd.cpp"
 
 int main(){
 	int V,E; cin>>V>>E;
