@@ -1,7 +1,7 @@
 #define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C"
-#include "test/template/template.hpp"
-#include "lib/graph/graph-template.hpp"
-#include "lib/graph/warshall-floyd.hpp"
+#include "../../test/template/template.hpp"
+#include "../../lib/graph/graph-template.hpp"
+#include "../../lib/graph/warshall-floyd.hpp"
 
 int main(){
 	int V,E; cin>>V>>E;
