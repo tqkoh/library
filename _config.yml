@@ -3,4 +3,3 @@ docs: {}
 plugins:
 - jemoji
 theme: jekyll-theme-minimal
-encoding: UTF-8
