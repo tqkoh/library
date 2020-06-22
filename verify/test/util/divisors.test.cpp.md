@@ -25,22 +25,21 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: test/graph/dijkstra.test.cpp
+# :heavy_check_mark: test/util/divisors.test.cpp
 
 <a href="../../../index.html">Back to top page</a>
 
-* category: <a href="../../../index.html#baa37bfd168b079b758c0db816f7295f">test/graph</a>
-* <a href="{{ site.github.repository_url }}/blob/master/test/graph/dijkstra.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-22 15:51:59+09:00
+* category: <a href="../../../index.html#b474f495c8582ac5f92778a42ae814fa">test/util</a>
+* <a href="{{ site.github.repository_url }}/blob/master/test/util/divisors.test.cpp">View this file on GitHub</a>
+    - Last commit date: 2020-06-22 15:40:35+09:00
 
 
-* see: <a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A">http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A</a>
+* see: <a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_3_D">http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_3_D</a>
 
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/lib/graph/dijkstra.hpp.html">Dijkstra</a>
-* :heavy_check_mark: <a href="../../../library/lib/graph/graph-template.hpp.html">Graph Template</a>
+* :heavy_check_mark: <a href="../../../library/lib/util/divisors.hpp.html">Divisors</a>
 * :heavy_check_mark: <a href="../../../library/test/template/template.hpp.html">test/template/template.hpp</a>
 
 
@@ -49,22 +48,15 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-#define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_A"
+#define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_3_D"
 #include "../../test/template/template.hpp"
-#include "../../lib/graph/graph-template.hpp"
-#include "../../lib/graph/dijkstra.hpp"
+#include "../../lib/util/divisors.hpp"
 
 int main(){
-	lint V,E,r; cin>>V>>E>>r;
-	vector<lint>s(E),t(E),d(E);  for(int i=0;i<E;++i) cin>>s[i]>>t[i]>>d[i];
-	Edges ge(E);
-	for(int i=0;i<E;++i)ge[i]=edge(s[i],t[i],d[i]);
-	Weighted g(V); e2w(g,ge,1); //Edges to Weighted
-
-	for(auto& e:dijkstra(g,r).first){
-		if(e.dist==linf)cout<<"INF"<<endl;
-		else cout<<e.dist<<endl;
-	}
+	lint a,b,c,ans=0; cin>>a>>b>>c;
+	auto s=divisors(c);
+	for(auto e:s)ans+=a<=e&&e<=b;
+	cout<<ans<<endl;
 }
 ```
 {% endraw %}

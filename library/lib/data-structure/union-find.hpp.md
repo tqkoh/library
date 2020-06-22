@@ -30,8 +30,8 @@ layout: default
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#cbed23bc82f8d451042dd45b42d995ac">lib/data-structure</a>
-* <a href="{{ site.github.repository_url }}/blob/master/lib/data-structure/union-find.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-03 15:02:22+09:00
+* <a href="{{ site.github.repository_url }}/blob/master/lib/data-structure/union-find.hpp">View this file on GitHub</a>
+    - Last commit date: 2020-06-22 13:29:24+09:00
 
 
 
@@ -80,7 +80,7 @@ public:
 <a id="bundled"></a>
 {% raw %}
 ```cpp
-#line 1 "lib/data-structure/union-find.cpp"
+#line 1 "lib/data-structure/union-find.hpp"
 class UnionFind{
 public:
 	vector<int>par,rank;

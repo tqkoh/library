@@ -25,13 +25,13 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: test/template/template.cpp
+# :heavy_check_mark: test/template/template.hpp
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#3bd26683cf387f4976fcd993c9e66cb5">test/template</a>
-* <a href="{{ site.github.repository_url }}/blob/master/test/template/template.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-22 13:11:46+09:00
+* <a href="{{ site.github.repository_url }}/blob/master/test/template/template.hpp">View this file on GitHub</a>
+    - Last commit date: 2020-06-22 13:29:24+09:00
 
 
 
@@ -41,6 +41,7 @@ layout: default
 * :heavy_check_mark: <a href="../../../verify/test/data-structure/union-find.test.cpp.html">test/data-structure/union-find.test.cpp</a>
 * :heavy_check_mark: <a href="../../../verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
 * :heavy_check_mark: <a href="../../../verify/test/graph/warshall-floyd.test.cpp.html">test/graph/warshall-floyd.test.cpp</a>
+* :heavy_check_mark: <a href="../../../verify/test/util/divisors.test.cpp.html">test/util/divisors.test.cpp</a>
 
 
 ## Code

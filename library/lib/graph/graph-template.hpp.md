@@ -30,8 +30,8 @@ layout: default
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#6e267a37887a7dcb68cbf7008d6c7e48">lib/graph</a>
-* <a href="{{ site.github.repository_url }}/blob/master/lib/graph/graph-template.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-03 19:00:32+09:00
+* <a href="{{ site.github.repository_url }}/blob/master/lib/graph/graph-template.hpp">View this file on GitHub</a>
+    - Last commit date: 2020-06-22 13:29:24+09:00
 
 
 
@@ -91,7 +91,7 @@ void e2m(Matrix& g,Edges edges,bool directed,length infinity){
 <a id="bundled"></a>
 {% raw %}
 ```cpp
-#line 1 "lib/graph/graph-template.cpp"
+#line 1 "lib/graph/graph-template.hpp"
 using length=lint;
 struct edge{
 	int src,to;

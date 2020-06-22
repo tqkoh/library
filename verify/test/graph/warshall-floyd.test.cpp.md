@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#baa37bfd168b079b758c0db816f7295f">test/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/test/graph/warshall-floyd.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-22 13:11:46+09:00
+    - Last commit date: 2020-06-22 15:40:35+09:00
 
 
 * see: <a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C">http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C</a>
@@ -39,9 +39,9 @@ layout: default
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/lib/graph/graph-template.cpp.html">Graph Template</a>
-* :heavy_check_mark: <a href="../../../library/lib/graph/warshall-floyd.cpp.html">Warshall Floyd</a>
-* :heavy_check_mark: <a href="../../../library/test/template/template.cpp.html">test/template/template.cpp</a>
+* :heavy_check_mark: <a href="../../../library/lib/graph/graph-template.hpp.html">Graph Template</a>
+* :heavy_check_mark: <a href="../../../library/lib/graph/warshall-floyd.hpp.html">Warshall Floyd</a>
+* :heavy_check_mark: <a href="../../../library/test/template/template.hpp.html">test/template/template.hpp</a>
 
 
 ## Code
@@ -50,9 +50,9 @@ layout: default
 {% raw %}
 ```cpp
 #define PROBLEM "http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C"
-#include "../../test/template/template.cpp"
-#include "../../lib/graph/graph-template.cpp"
-#include "../../lib/graph/warshall-floyd.cpp"
+#include "../../test/template/template.hpp"
+#include "../../lib/graph/graph-template.hpp"
+#include "../../lib/graph/warshall-floyd.hpp"
 
 int main(){
 	int V,E; cin>>V>>E;

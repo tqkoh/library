@@ -30,8 +30,8 @@ layout: default
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#6e267a37887a7dcb68cbf7008d6c7e48">lib/graph</a>
-* <a href="{{ site.github.repository_url }}/blob/master/lib/graph/dijkstra.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-22 12:34:44+09:00
+* <a href="{{ site.github.repository_url }}/blob/master/lib/graph/dijkstra.hpp">View this file on GitHub</a>
+    - Last commit date: 2020-06-22 15:51:59+09:00
 
 
 
@@ -84,6 +84,7 @@ pair<vector<status>,vector<int>> dijkstra(Weighted g,int s){
 
 /*
 * @title Dijkstra
+* @docs docs/dijkstra.md
 */
 ```
 {% endraw %}
@@ -91,7 +92,7 @@ pair<vector<status>,vector<int>> dijkstra(Weighted g,int s){
 <a id="bundled"></a>
 {% raw %}
 ```cpp
-#line 1 "lib/graph/dijkstra.cpp"
+#line 1 "lib/graph/dijkstra.hpp"
 struct status{
 	lint dist;
 	status(lint n){
@@ -130,6 +131,7 @@ pair<vector<status>,vector<int>> dijkstra(Weighted g,int s){
 
 /*
 * @title Dijkstra
+* @docs docs/dijkstra.md
 */
 
 ```

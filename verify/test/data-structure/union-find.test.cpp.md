@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#c475b539faf362c96f7dec3abb868ed7">test/data-structure</a>
 * <a href="{{ site.github.repository_url }}/blob/master/test/data-structure/union-find.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-22 13:11:46+09:00
+    - Last commit date: 2020-06-22 15:40:35+09:00
 
 
 * see: <a href="https://judge.yosupo.jp/problem/unionfind">https://judge.yosupo.jp/problem/unionfind</a>
@@ -39,8 +39,8 @@ layout: default
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/lib/data-structure/union-find.cpp.html">Union Find</a>
-* :heavy_check_mark: <a href="../../../library/test/template/template.cpp.html">test/template/template.cpp</a>
+* :heavy_check_mark: <a href="../../../library/lib/data-structure/union-find.hpp.html">Union Find</a>
+* :heavy_check_mark: <a href="../../../library/test/template/template.hpp.html">test/template/template.hpp</a>
 
 
 ## Code
@@ -49,8 +49,8 @@ layout: default
 {% raw %}
 ```cpp
 #define PROBLEM "https://judge.yosupo.jp/problem/unionfind"
-#include "../../test/template/template.cpp"
-#include "../../lib/data-structure/union-find.cpp"
+#include "../../test/template/template.hpp"
+#include "../../lib/data-structure/union-find.hpp"
 
 int main(){
 	lint n,q; cin>>n>>q;
