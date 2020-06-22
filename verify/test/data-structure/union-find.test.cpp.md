@@ -25,21 +25,22 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :x: test/data-structure/union-find.test.cpp
+# :heavy_check_mark: test/data-structure/union-find.test.cpp
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#c475b539faf362c96f7dec3abb868ed7">test/data-structure</a>
 * <a href="{{ site.github.repository_url }}/blob/master/test/data-structure/union-find.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-22 13:08:10+09:00
+    - Last commit date: 2020-06-22 13:11:46+09:00
 
 
+* see: <a href="https://judge.yosupo.jp/problem/unionfind">https://judge.yosupo.jp/problem/unionfind</a>
 
 
 ## Depends on
 
-* :x: <a href="../../../library/lib/data-structure/union-find.cpp.html">Union Find</a>
-* :x: <a href="../../../library/test/template/template.cpp.html">test/template/template.cpp</a>
+* :heavy_check_mark: <a href="../../../library/lib/data-structure/union-find.cpp.html">Union Find</a>
+* :heavy_check_mark: <a href="../../../library/test/template/template.cpp.html">test/template/template.cpp</a>
 
 
 ## Code
