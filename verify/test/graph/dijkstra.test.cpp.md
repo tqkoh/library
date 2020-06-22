@@ -25,22 +25,22 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: test/graph/dijkstra.test.cpp
+# :x: test/graph/dijkstra.test.cpp
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#baa37bfd168b079b758c0db816f7295f">test/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/test/graph/dijkstra.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-03 19:00:32+09:00
+    - Last commit date: 2020-06-22 12:34:44+09:00
 
 
 
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/lib/graph/dijkstra.cpp.html">Dijkstra</a>
-* :heavy_check_mark: <a href="../../../library/lib/graph/graph-template.cpp.html">Graph Template</a>
-* :heavy_check_mark: <a href="../../../library/test/template/template.cpp.html">test/template/template.cpp</a>
+* :x: <a href="../../../library/lib/graph/dijkstra.cpp.html">Dijkstra</a>
+* :question: <a href="../../../library/lib/graph/graph-template.cpp.html">Graph Template</a>
+* :question: <a href="../../../library/test/template/template.cpp.html">test/template/template.cpp</a>
 
 
 ## Code
