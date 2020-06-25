@@ -55,6 +55,7 @@ layout: default
 ### lib/util
 
 * :heavy_check_mark: <a href="library/lib/util/divisors.hpp.html">Divisors</a>
+* :warning: <a href="library/lib/util/eratosthenes.hpp.html">eratosthenes</a>
 * :warning: <a href="library/lib/util/mint.hpp.html">Mint</a>
 * :warning: <a href="library/lib/util/ncr-or.hpp.html">Ncr O(r)</a>
 * :warning: <a href="library/lib/util/ncr.hpp.html">Ncr</a>
