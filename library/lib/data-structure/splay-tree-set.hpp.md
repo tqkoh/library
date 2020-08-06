@@ -25,7 +25,7 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :x: Splay Tree(set)
+# :warning: Splay Tree(set)
 
 <a href="../../../index.html">Back to top page</a>
 
@@ -34,11 +34,6 @@ layout: default
     - Last commit date: 2020-08-07 03:43:33+09:00
 
 
-
-
-## Verified with
-
-* :x: <a href="../../../verify/test/data-structure/splay-tree-set.test.cpp.html">test/data-structure/splay-tree-set.test.cpp</a>
 
 
 ## Code
