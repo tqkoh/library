@@ -187,9 +187,9 @@ public:
 	void print_tree(){
 		each(root(),[&](Node* v, int d, int dir){
 			std::cout << std::string(2*d,' ');
-			if(dir == -1)std::cout << "„¡  ";
-			if(dir == 0)std::cout << "„Ÿ  ";
-			if(dir == 1)std::cout << "„¤  ";
+			if(dir == -1)std::cout << "/  ";
+			if(dir == 0)std::cout << "-  ";
+			if(dir == 1)std::cout << "\\  ";
 			std::cout << v->val << '\n';
 		});
 	}
