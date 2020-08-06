@@ -38,6 +38,7 @@ layout: default
 
 ### lib/data-structure
 
+* :x: <a href="library/lib/data-structure/splay-tree-set.hpp.html">Splay Tree(set)</a>
 * :heavy_check_mark: <a href="library/lib/data-structure/union-find.hpp.html">Union Find</a>
 
 
@@ -65,11 +66,12 @@ layout: default
 
 ### test/template
 
-* :heavy_check_mark: <a href="library/test/template/template.hpp.html">test/template/template.hpp</a>
+* :question: <a href="library/test/template/template.hpp.html">test/template/template.hpp</a>
 
 
 ## Verify Files
 
+* :x: <a href="verify/test/data-structure/splay-tree-set.test.cpp.html">test/data-structure/splay-tree-set.test.cpp</a>
 * :heavy_check_mark: <a href="verify/test/data-structure/union-find.test.cpp.html">test/data-structure/union-find.test.cpp</a>
 * :heavy_check_mark: <a href="verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
 * :heavy_check_mark: <a href="verify/test/graph/warshall-floyd.test.cpp.html">test/graph/warshall-floyd.test.cpp</a>
