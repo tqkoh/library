@@ -177,15 +177,15 @@ public:
 	}
 
 	template<class F>
-	void each(Node* v, F f, int d = 0, int dir = 0){
+	void tour(Node* v, F f, int d = 0, int dir = 0){
 		if(v){
-			each(v->l, f, d+1, -1);
+			tour(v->l, f, d+1, -1);
 			f(v, d, dir);
-			each(v->r, f, d+1, 1);
+			tour(v->r, f, d+1, 1);
 		}
 	}
 	void print_tree(){
-		each(root(),[&](Node* v, int d, int dir){
+		tour(root(),[&](Node* v, int d, int dir){
 			std::cout << std::string(2*d,' ');
 			if(dir == -1)std::cout << "/  ";
 			if(dir == 0)std::cout << "-  ";
@@ -195,7 +195,7 @@ public:
 	}
 	void print(){
 		std::cout << "{ ";
-		each(root(),[&](Node* v, int, int){
+		tour(root(),[&](Node* v, int, int){
 			std::cout << v->val << ", ";
 		});
 		std::cout << "}";
@@ -203,30 +203,30 @@ public:
 };
 std::ostream& operator<<(std::ostream&os, Set&rhs){rhs.print();return os; }
 Set operator+=(Set& l, Set& r){
-	r.each(r.root(),[&](Set::Node* v,int,int){
+	r.tour(r.root(),[&](Set::Node* v,int,int){
 		l.insert(v->val);
 	});
 	return l;
 }
 Set operator+(Set& l, Set& r){
 	Set ret;
-	l.each(l.root(),[&](Set::Node* v,int,int){
+	l.tour(l.root(),[&](Set::Node* v,int,int){
 		ret.insert(v->val);
 	});
-	r.each(r.root(),[&](Set::Node* v,int,int){
+	r.tour(r.root(),[&](Set::Node* v,int,int){
 		ret.insert(v->val);
 	});
 	return ret;
 }
 Set operator*=(Set& l, Set& r){
-	r.each(r.root(),[&](Set::Node* v,int,int){
+	r.tour(r.root(),[&](Set::Node* v,int,int){
 		if(!l.find(v->val))l.erase(v->val);
 	});
 	return l;
 }
 Set operator*(Set& l, Set& r){
 	Set ret;
-	l.each(l.root(),[&](Set::Node* v,int,int){
+	l.tour(l.root(),[&](Set::Node* v,int,int){
 		if(r.find(v->val))ret.insert(v->val);
 	});
 	return ret;
