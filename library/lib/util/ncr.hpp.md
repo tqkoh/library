@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#76d75a8065c92efe3b83e817563c11ef">lib/util</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/util/ncr.hpp">View this file on GitHub</a>
-    - Last commit date: 2020-06-22 16:37:39+09:00
+    - Last commit date: 2020-08-08 02:55:05+09:00
 
 
 
@@ -138,6 +138,9 @@ md_tmp ostream& operator<<(ostream& os,const modint<md>& m){
 	return os<<m.a;
 }
 using mint = modint<>;
+#ifndef _AOJ_
+mint operator""m(unsigned long long n){ return mint(n); }
+#endif
 
 /*
 * @title Mint
