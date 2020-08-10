@@ -25,7 +25,7 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: test/template/template.hpp
+# :question: test/template/template.hpp
 
 <a href="../../../index.html">Back to top page</a>
 
@@ -38,6 +38,7 @@ layout: default
 
 ## Verified with
 
+* :x: <a href="../../../verify/test/data-structure/rangeadd-bit.test.hpp.html">test/data-structure/rangeadd-bit.test.hpp</a>
 * :heavy_check_mark: <a href="../../../verify/test/data-structure/union-find.test.cpp.html">test/data-structure/union-find.test.cpp</a>
 * :heavy_check_mark: <a href="../../../verify/test/graph/dijkstra.test.cpp.html">test/graph/dijkstra.test.cpp</a>
 * :heavy_check_mark: <a href="../../../verify/test/graph/warshall-floyd.test.cpp.html">test/graph/warshall-floyd.test.cpp</a>

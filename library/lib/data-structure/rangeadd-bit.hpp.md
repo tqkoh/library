@@ -25,7 +25,7 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :warning: Rangeadd Binary Indexed Tree
+# :x: Rangeadd Binary Indexed Tree
 
 <a href="../../../index.html">Back to top page</a>
 
@@ -34,6 +34,11 @@ layout: default
     - Last commit date: 2020-08-11 05:05:34+09:00
 
 
+
+
+## Verified with
+
+* :x: <a href="../../../verify/test/data-structure/rangeadd-bit.test.hpp.html">test/data-structure/rangeadd-bit.test.hpp</a>
 
 
 ## Code

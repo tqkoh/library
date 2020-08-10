@@ -41,7 +41,7 @@ layout: default
 
 * :heavy_check_mark: <a href="../../../library/lib/graph/graph-template.hpp.html">Graph Template</a>
 * :heavy_check_mark: <a href="../../../library/lib/graph/warshall-floyd.hpp.html">Warshall Floyd</a>
-* :heavy_check_mark: <a href="../../../library/test/template/template.hpp.html">test/template/template.hpp</a>
+* :question: <a href="../../../library/test/template/template.hpp.html">test/template/template.hpp</a>
 
 
 ## Code

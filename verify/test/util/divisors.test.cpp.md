@@ -40,7 +40,7 @@ layout: default
 ## Depends on
 
 * :heavy_check_mark: <a href="../../../library/lib/util/divisors.hpp.html">Divisors</a>
-* :heavy_check_mark: <a href="../../../library/test/template/template.hpp.html">test/template/template.hpp</a>
+* :question: <a href="../../../library/test/template/template.hpp.html">test/template/template.hpp</a>
 
 
 ## Code
