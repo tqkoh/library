@@ -38,6 +38,7 @@ layout: default
 
 ### lib/data-structure
 
+* :warning: <a href="library/lib/data-structure/rangeadd-bit.hpp.html">Rangeadd Binary Indexed Tree</a>
 * :warning: <a href="library/lib/data-structure/splay-tree-set.hpp.html">Splay Tree(set)</a>
 * :heavy_check_mark: <a href="library/lib/data-structure/union-find.hpp.html">Union Find</a>
 
