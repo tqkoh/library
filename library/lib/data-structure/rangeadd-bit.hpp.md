@@ -25,13 +25,13 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :x: Rangeadd Binary Indexed Tree
+# :x: RangeAdd Binary Indexed Tree
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#cbed23bc82f8d451042dd45b42d995ac">lib/data-structure</a>
 * <a href="{{ site.github.repository_url }}/blob/master/lib/data-structure/rangeadd-bit.hpp">View this file on GitHub</a>
-    - Last commit date: 2020-08-11 05:05:34+09:00
+    - Last commit date: 2020-08-11 13:42:23+09:00
 
 
 
@@ -78,7 +78,7 @@ public:
 };
 
 /*
-* @title Rangeadd Binary Indexed Tree
+* @title RangeAdd Binary Indexed Tree
 */
 
 ```
@@ -119,7 +119,7 @@ public:
 };
 
 /*
-* @title Rangeadd Binary Indexed Tree
+* @title RangeAdd Binary Indexed Tree
 */
 
 ```
