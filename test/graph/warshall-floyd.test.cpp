@@ -8,7 +8,7 @@ int main(){
 	vector<lint>s(E),t(E),d(E); for(int i=0;i<E;++i) cin>>s[i]>>t[i]>>d[i];
 	Edges ge(E);
 	for(int i=0;i<E;++i)ge[i]=edge(s[i],t[i],d[i]);
-	Matrix g(V); e2m(g,ge,1,linf); //Edges to Matrix
+	Matrix g(V); e2m(g,ge,1,linf);
 
 	warshall_floyd(g,linf);
 	bool ok=1;
