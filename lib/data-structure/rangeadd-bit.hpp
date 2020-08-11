@@ -30,5 +30,5 @@ public:
 };
 
 /*
-* @title Rangeadd Binary Indexed Tree
+* @title RangeAdd Binary Indexed Tree
 */
