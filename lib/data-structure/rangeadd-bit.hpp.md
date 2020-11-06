@@ -3,11 +3,11 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
-    path: test/data-structure/rangeadd-bit.test.hpp
-    title: test/data-structure/rangeadd-bit.test.hpp
+  - icon: ':heavy_check_mark:'
+    path: test/data-structure/rangeadd-bit.test.cpp
+    title: test/data-structure/rangeadd-bit.test.cpp
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     document_title: RangeAdd Binary Indexed Tree
     links: []
@@ -32,9 +32,9 @@ data:
   path: lib/data-structure/rangeadd-bit.hpp
   requiredBy: []
   timestamp: '2020-08-11 13:42:23+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/data-structure/rangeadd-bit.test.hpp
+  - test/data-structure/rangeadd-bit.test.cpp
 documentation_of: lib/data-structure/rangeadd-bit.hpp
 layout: document
 redirect_from:

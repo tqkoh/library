@@ -44,8 +44,8 @@ data:
   timestamp: '2020-06-22 16:37:39+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/graph/dijkstra.test.cpp
   - test/graph/warshall-floyd.test.cpp
+  - test/graph/dijkstra.test.cpp
 documentation_of: lib/graph/graph-template.hpp
 layout: document
 redirect_from:

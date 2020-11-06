@@ -3,7 +3,7 @@ data:
   libraryCategories:
   - name: lib/data-structure
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: lib/data-structure/rangeadd-bit.hpp
       title: RangeAdd Binary Indexed Tree
     - icon: ':warning:'
@@ -42,15 +42,15 @@ data:
       title: Ncr
   - name: test/template
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: test/template/template.hpp
       title: test/template/template.hpp
   verificationCategories:
   - name: test/data-structure
     pages:
-    - icon: ':x:'
-      path: test/data-structure/rangeadd-bit.test.hpp
-      title: test/data-structure/rangeadd-bit.test.hpp
+    - icon: ':heavy_check_mark:'
+      path: test/data-structure/rangeadd-bit.test.cpp
+      title: test/data-structure/rangeadd-bit.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/data-structure/union-find.test.cpp
       title: test/data-structure/union-find.test.cpp
