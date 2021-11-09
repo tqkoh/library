@@ -13,7 +13,7 @@ int main(){
 			g.add_edge(u, v, 0, 1);
 		}
 	}
-	vector<lint> d(n);
+	vector<lint> d(n, linf);
 	bfs(n, 0, g, [&](edge e){
 		d[e.to] = d[e.src]+1;
 	});
