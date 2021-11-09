@@ -10,5 +10,5 @@ void bfs(int n, int s, Weighted g, vFe dtmn){
 }
 
 /*
-* @title bfs
+* @title BFS
 */
