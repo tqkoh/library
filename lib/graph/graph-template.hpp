@@ -29,11 +29,13 @@ public:
 	}
 	void add_edge(edge e, length cost, bool directed = 0){
 		chmin((*this)[e.src][e.to], cost);
-		if(!directed)chmin((*this)[e.to][e.src], cost);
+		if((*this)[e.src][e.to]>cost)(*this)[e.src][e.to] = cost;
+		if(!directed)if((*this)[e.to][e.src]>cost)(*this)[e.to][e.src] = cost;
 	}
 	void add_edge(int src, int to, length cost, bool directed = 0){
 		chmin((*this)[src][to], cost);
-		if(!directed)chmin((*this)[to][src], cost);
+		if((*this)[src][to]>cost)(*this)[src][to] = cost;
+		if(!directed)if((*this)[to][src]>cost)(*this)[to][src] = cost;
 	}
 };
 
