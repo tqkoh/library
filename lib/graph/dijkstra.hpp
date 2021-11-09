@@ -37,5 +37,4 @@ pair<vector<status>, vector<int>> dijkstra(Weighted g, int s, vector<length>&cos
 
 /*
 * @title Dijkstra
-* @docs docs/graph/dijkstra.md
 */
