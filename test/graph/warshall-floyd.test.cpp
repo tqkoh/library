@@ -4,22 +4,17 @@
 #include "../../lib/graph/warshall-floyd.hpp"
 
 int main(){
-	int V,E; cin>>V>>E;
-	vector<lint>s(E),t(E),d(E); for(int i=0;i<E;++i) cin>>s[i]>>t[i]>>d[i];
-	Edges ge(E);
-	for(int i=0;i<E;++i)ge[i]=edge(s[i],t[i],d[i]);
-	Matrix g(V); e2m(g,ge,1,linf);
-
-	warshall_floyd(g,linf);
-	bool ok=1;
-	for(int i=0;i<V;++i)if(g[i][i]<0)ok=0;
-	if(!ok)return cout<<"NEGATIVE CYCLE"<<endl,0;
-	for(int i=0;i<V;++i){
-		for(int j=0;j<V;++j){
-			if(g[i][j]==linf)cout<<"INF";
-			else cout<<g[i][j];
+	lint V,E; cin>>V>>E;
+	Matrix g(V);
+	vector<lint>s(E), t(E), d(E);  for(int i = 0; i<E; ++i) cin>>s[i]>>t[i]>>d[i];
+	for(int i = 0; i<E; ++i)g.add_edge(s[i], t[i], d[i], 1);
+	if(warshall_floyd(g, 2*linf))return cout<<"NEGATIVE CYCLE\n", 0;
+	for(int i = 0; i<V; ++i){
+		for(int j = 0; j<V; ++j){
+			cout<<(g[i][j]==2*linf?"INF":to_string(g[i][j]));
 			if(j!=V-1)cout<<" ";
 		}
 		cout<<endl;
 	}
+	return 0;
 }
