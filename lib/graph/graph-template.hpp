@@ -27,6 +27,14 @@ public:
 		this->resize(n, vector<length>(n, inf));
 		for(int i = 0; i<n; ++i)(*this)[i][i] = 0;
 	}
+	void add_edge(edge e, length cost, bool directed = 0){
+		chmin((*this)[e.src][e.to], cost);
+		if(!directed)chmin((*this)[e.to][e.src], cost);
+	}
+	void add_edge(int src, int to, length cost, bool directed = 0){
+		chmin((*this)[src][to], cost);
+		if(!directed)chmin((*this)[to][src], cost);
+	}
 };
 
 
