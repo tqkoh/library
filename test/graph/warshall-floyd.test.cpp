@@ -8,13 +8,12 @@ int main(){
 	Matrix g(V);
 	vector<lint>s(E), t(E), d(E);  for(int i = 0; i<E; ++i) cin>>s[i]>>t[i]>>d[i];
 	for(int i = 0; i<E; ++i)g.add_edge(s[i], t[i], d[i], 1);
-	if(warshall_floyd(g, 2*linf))return cout<<"NEGATIVE CYCLE\t", 0;
+	if(warshall_floyd(g, 2*linf))return cout<<"NEGATIVE CYCLE\n", 0;
 	for(int i = 0; i<V; ++i){
 		for(int j = 0; j<V; ++j){
-			cout<<(g[i][j]==2*linf?"INF":to_string(g[i][j]));
-			if(j!=V-1)cout<<" ";
+			cout<<(g[i][j]==2*linf?"INF":to_string(g[i][j]))<<" ";
 		}
-		cout<<endl;
+		if(i!=V-1)cout<<endl;
 	}
 	return 0;
 }
