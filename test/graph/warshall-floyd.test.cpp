@@ -3,7 +3,7 @@
 #include "../../lib/graph/graph-template.hpp"
 #include "../../lib/graph/warshall-floyd.hpp"
 
-int solve(){
+int main(){
 	lint V,E; cin>>V>>E;
 	Matrix g(V);
 	vector<lint>s(E), t(E), d(E);  for(int i = 0; i<E; ++i) cin>>s[i]>>t[i]>>d[i];
