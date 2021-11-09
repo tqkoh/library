@@ -10,7 +10,7 @@ int main(){
 		int u, k; cin>>u>>k; --u;
 		for(int j = 0; j<k; ++j){
 			int v; cin>>v; --v;
-			g.add_edge(u, v, 1);
+			g.add_edge(u, v, 0, 1);
 		}
 	}
 	vector<lint> d(n);
