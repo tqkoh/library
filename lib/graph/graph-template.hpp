@@ -25,7 +25,7 @@ class Matrix: public vector<vector<length>>{
 public:
 	Matrix(int n, length inf = 2*linf){
 		this->resize(n, vector<length>(n, inf));
-		rep(n)(*this)[i][i] = 0;
+		for(int i = 0; i<n; ++i)(*this)[i][i] = 0;
 	}
 };
 

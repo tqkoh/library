@@ -5,7 +5,7 @@ void bfs(int n, int s, Weighted g, vFe dtmn){
 	queue<int>q({ s });
 	while(q.size()){
 		int c = q.front(); q.pop();
-		each(g[c])if(!vis[e.to])dtmn(e), vis[e.to] = 1, q.push(e.to);
+		for(auto e: g[c])if(!vis[e.to])dtmn(e), vis[e.to] = 1, q.push(e.to);
 	}
 }
 
