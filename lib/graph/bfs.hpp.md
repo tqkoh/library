@@ -2,34 +2,37 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/graph/bfs.test.cpp
+    title: test/graph/bfs.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
-    document_title: bfs
+    document_title: BFS
     links: []
-  bundledCode: "#line 2 \"lib/graph/bfs.hpp\"\ntemplate<class viFi, class vFe >\n\
-    void bfs(int n, int s, viFi next, vFe dtmn){\n\tvector<int>vis(n);\n\tqueue<int>q({\
-    \ s });\n\twhile(q.size()){\n\t\tint c = q.front(); q.pop();\n\t\tif(vis[c])continue;\n\
-    \t\tvis[c] = 1;\n\t\teach(next(c))if(!vis[e.to])dtmn(e), q.push(e.to);\n\t}\n\
-    }\n\n/*\n* @title bfs\n*/\n"
-  code: "#pragma once\ntemplate<class viFi, class vFe >\nvoid bfs(int n, int s, viFi\
-    \ next, vFe dtmn){\n\tvector<int>vis(n);\n\tqueue<int>q({ s });\n\twhile(q.size()){\n\
-    \t\tint c = q.front(); q.pop();\n\t\tif(vis[c])continue;\n\t\tvis[c] = 1;\n\t\t\
-    each(next(c))if(!vis[e.to])dtmn(e), q.push(e.to);\n\t}\n}\n\n/*\n* @title bfs\n\
-    */\n"
+  bundledCode: "#line 2 \"lib/graph/bfs.hpp\"\ntemplate<class vFe >\nvoid bfs(int\
+    \ n, int s, Weighted g, vFe dtmn){\n\tvector<int>vis(n); vis[s] = 1;\n\tqueue<int>q({\
+    \ s });\n\twhile(q.size()){\n\t\tint c = q.front(); q.pop();\n\t\tfor(auto e:\
+    \ g[c])if(!vis[e.to])dtmn(e), vis[e.to] = 1, q.push(e.to);\n\t}\n}\n\n/*\n* @title\
+    \ BFS\n*/\n"
+  code: "#pragma once\ntemplate<class vFe >\nvoid bfs(int n, int s, Weighted g, vFe\
+    \ dtmn){\n\tvector<int>vis(n); vis[s] = 1;\n\tqueue<int>q({ s });\n\twhile(q.size()){\n\
+    \t\tint c = q.front(); q.pop();\n\t\tfor(auto e: g[c])if(!vis[e.to])dtmn(e), vis[e.to]\
+    \ = 1, q.push(e.to);\n\t}\n}\n\n/*\n* @title BFS\n*/\n"
   dependsOn: []
   isVerificationFile: false
   path: lib/graph/bfs.hpp
   requiredBy: []
-  timestamp: '2021-11-09 11:38:15+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2021-11-09 16:22:11+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/graph/bfs.test.cpp
 documentation_of: lib/graph/bfs.hpp
 layout: document
 redirect_from:
 - /library/lib/graph/bfs.hpp
 - /library/lib/graph/bfs.hpp.html
-title: bfs
+title: BFS
 ---

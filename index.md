@@ -1,6 +1,11 @@
 ---
 data:
   libraryCategories:
+  - name: gomi
+    pages:
+    - icon: ':warning:'
+      path: gomi/lattice_conv.hpp
+      title: gomi/lattice_conv.hpp
   - name: lib/data-structure
     pages:
     - icon: ':heavy_check_mark:'
@@ -12,18 +17,23 @@ data:
     - icon: ':heavy_check_mark:'
       path: lib/data-structure/union-find.hpp
       title: Union Find
-  - name: lib/graph
+  - name: lib/gomi
     pages:
     - icon: ':warning:'
+      path: lib/gomi/lattice-conv.hpp
+      title: lib/gomi/lattice-conv.hpp
+  - name: lib/graph
+    pages:
+    - icon: ':heavy_check_mark:'
       path: lib/graph/bfs.hpp
-      title: bfs
-    - icon: ':x:'
+      title: BFS
+    - icon: ':heavy_check_mark:'
       path: lib/graph/dijkstra.hpp
       title: Dijkstra
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: lib/graph/graph-template.hpp
       title: Graph Template
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: lib/graph/warshall-floyd.hpp
       title: Warshall Floyd
   - name: lib/util
@@ -45,7 +55,7 @@ data:
       title: Ncr
   - name: test/template
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: test/template/template.hpp
       title: test/template/template.hpp
   verificationCategories:
@@ -59,10 +69,13 @@ data:
       title: test/data-structure/union-find.test.cpp
   - name: test/graph
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
+      path: test/graph/bfs.test.cpp
+      title: test/graph/bfs.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/graph/dijkstra.test.cpp
       title: test/graph/dijkstra.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/graph/warshall-floyd.test.cpp
       title: test/graph/warshall-floyd.test.cpp
   - name: test/util
