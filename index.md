@@ -14,13 +14,16 @@ data:
       title: Union Find
   - name: lib/graph
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
+      path: lib/graph/bfs.hpp
+      title: bfs
+    - icon: ':x:'
       path: lib/graph/dijkstra.hpp
       title: Dijkstra
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: lib/graph/graph-template.hpp
       title: Graph Template
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: lib/graph/warshall-floyd.hpp
       title: Warshall Floyd
   - name: lib/util
@@ -42,7 +45,7 @@ data:
       title: Ncr
   - name: test/template
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: test/template/template.hpp
       title: test/template/template.hpp
   verificationCategories:
@@ -56,10 +59,10 @@ data:
       title: test/data-structure/union-find.test.cpp
   - name: test/graph
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/graph/dijkstra.test.cpp
       title: test/graph/dijkstra.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/graph/warshall-floyd.test.cpp
       title: test/graph/warshall-floyd.test.cpp
   - name: test/util
