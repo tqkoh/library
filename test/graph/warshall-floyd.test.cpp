@@ -14,6 +14,7 @@ int main(){
 			cout<<(g[i][j]==2*linf?"INF":to_string(g[i][j]));
 			if(j!=V-1)cout<<" ";
 		}
+		cout<<endl;
 	}
 	return 0;
 }
