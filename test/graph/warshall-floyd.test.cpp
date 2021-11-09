@@ -11,7 +11,8 @@ int main(){
 	if(warshall_floyd(g, 2*linf))return cout<<"NEGATIVE CYCLE\t", 0;
 	for(int i = 0; i<V; ++i){
 		for(int j = 0; j<V; ++j){
-			cout<<(g[i][j]==2*linf?"INF":to_string(g[i][j]))<<" ";
+			cout<<(g[i][j]==2*linf?"INF":to_string(g[i][j]));
+			if(j!=V-1)cout<<" ";
 		}
 		cout<<endl;
 	}
