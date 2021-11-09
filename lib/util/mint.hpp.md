@@ -6,6 +6,7 @@ data:
     path: lib/util/ncr.hpp
     title: Ncr
   _extendedVerifiedWith: []
+  _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:

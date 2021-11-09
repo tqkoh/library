@@ -6,6 +6,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/util/divisors.test.cpp
     title: test/util/divisors.test.cpp
+  _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
