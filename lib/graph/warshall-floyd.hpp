@@ -16,4 +16,5 @@ int warshall_floyd(Matrix& g, length inf = 2*linf){
 }
 /*
 * @title Warshall Floyd
+* @brief returns 1 if negative cycle exists
 */

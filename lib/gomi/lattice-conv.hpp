@@ -1,3 +1,4 @@
+#define IGNORE
 #literal g
 auto z = [&](lint y, lint x)->int{ return y*w+x; };
 Weighted $g$(h*w);
