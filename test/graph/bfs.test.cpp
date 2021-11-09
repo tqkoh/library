@@ -18,7 +18,7 @@ int main(){
 		d[e.to] = d[e.src]+1;
 	});
 	for(int i = 0; i<n; ++i){
-		cout<<i+1<<" "<<d[i]<<endl;
+		cout<<i+1<<" "<<(d[i]==linf?-1:d[i])<<endl;
 	}
 	return 0;
 }
