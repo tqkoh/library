@@ -1,11 +1,6 @@
 ---
 data:
   libraryCategories:
-  - name: gomi
-    pages:
-    - icon: ':warning:'
-      path: gomi/lattice_conv.hpp
-      title: gomi/lattice_conv.hpp
   - name: lib/data-structure
     pages:
     - icon: ':heavy_check_mark:'
