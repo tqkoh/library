@@ -13,12 +13,12 @@ int main(){
 			g.add_edge(u, v, 0, 1);
 		}
 	}
-	vector<lint> d(n, linf);
+	vector<lint> d(n, linf); d[0] = 0;
 	bfs(n, 0, g, [&](edge e){
 		d[e.to] = d[e.src]+1;
 	});
 	for(int i = 0; i<n; ++i){
-		cout<<i+1<<" "<<(d[i]==linf?-1:d[i])<<endl;
+		cout<<i+1<<" "<<(d[i]>=linf?-1:d[i])<<endl;
 	}
 	return 0;
 }
