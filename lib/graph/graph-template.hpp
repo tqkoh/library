@@ -7,9 +7,9 @@ struct edge{
 };
 
 using Edges = vector<edge>;
-class Weighted: public vector<Edges>{
+class Graph: public vector<Edges>{
 public:
-	Weighted(int n){
+	Graph(int n){
 		this->resize(n);
 	}
 	void add_edge(edge e, bool directed = 0){
@@ -36,11 +36,6 @@ public:
 		if(!directed)if((*this)[to][src]>cost)(*this)[to][src] = cost;
 	}
 };
-
-
-/*
-* @title Graph Template
-*/
 
 
 /*

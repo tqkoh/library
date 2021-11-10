@@ -5,7 +5,7 @@
 
 int main(){
 	lint V,E,r; cin>>V>>E>>r;
-	Weighted g(V);
+	Graph g(V);
 	vector<lint>s(E), t(E), d(E);  for(int i = 0; i<E; ++i) cin>>s[i]>>t[i]>>d[i];
 	for(int i = 0; i<E; ++i)g.add_edge(s[i], t[i], i, 1);
 

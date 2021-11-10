@@ -5,7 +5,7 @@
 
 int main(){
 	lint n; cin>>n;
-	Weighted g(n);
+	Graph g(n);
 	for(int i = 0; i<n; ++i){
 		int u, k; cin>>u>>k; --u;
 		for(int j = 0; j<k; ++j){

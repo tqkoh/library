@@ -1,6 +1,6 @@
 #pragma once
 template<class vFe >
-void bfs(int n, int s, Weighted g, vFe dtmn){
+void bfs(int n, int s, Graph g, vFe dtmn){
 	vector<int>vis(n); vis[s] = 1;
 	queue<int>q({ s });
 	while(q.size()){
