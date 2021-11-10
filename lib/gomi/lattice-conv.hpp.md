@@ -26,16 +26,16 @@ data:
     \ returned non-zero exit status 1.\n"
   code: '#define IGNORE
 
-    #literal g
+    #literal s
 
     auto z = [&](lint y, lint x)->int{ return y*w+x; };
 
-    Weighted $g$(h*w);
+    Graph g(h*w);
 
-    rep(h)rep(j, w-1)if(s[i][j]!=''#''&&s[i][j+1]!=''#'')$g$.add_edge(z(i, j), z(i,
+    rep(h)rep(j, w-1)if($s$[i][j]!=''#''&&$s$[i][j+1]!=''#'')g.add_edge(z(i, j), z(i,
     j+1));
 
-    rep(h-1)rep(j, w)if(s[i][j]!=''#''&&s[i+1][j]!=''#'')$g$.add_edge(z(i, j), z(i+1,
+    rep(h-1)rep(j, w)if($s$[i][j]!=''#''&&$s$[i+1][j]!=''#'')g.add_edge(z(i, j), z(i+1,
     j));
 
     '
@@ -48,8 +48,8 @@ data:
   verifiedWith: []
 documentation_of: lib/gomi/lattice-conv.hpp
 layout: document
-redirect_from:
-- /library/lib/gomi/lattice-conv.hpp
-- /library/lib/gomi/lattice-conv.hpp.html
-title: lib/gomi/lattice-conv.hpp
+title: Lattice Conv
 ---
+
+## 説明
+- s: vector<string> などから g: Graph に変換する。

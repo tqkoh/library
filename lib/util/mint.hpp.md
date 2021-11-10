@@ -72,8 +72,5 @@ data:
   verifiedWith: []
 documentation_of: lib/util/mint.hpp
 layout: document
-redirect_from:
-- /library/lib/util/mint.hpp
-- /library/lib/util/mint.hpp.html
 title: Mint
 ---

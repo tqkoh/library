@@ -58,8 +58,5 @@ data:
   verifiedWith: []
 documentation_of: lib/util/ncr.hpp
 layout: document
-redirect_from:
-- /library/lib/util/ncr.hpp
-- /library/lib/util/ncr.hpp.html
 title: Ncr
 ---

@@ -29,8 +29,5 @@ data:
   - test/util/divisors.test.cpp
 documentation_of: lib/util/divisors.hpp
 layout: document
-redirect_from:
-- /library/lib/util/divisors.hpp
-- /library/lib/util/divisors.hpp.html
 title: Divisors
 ---

@@ -26,8 +26,5 @@ data:
   verifiedWith: []
 documentation_of: lib/util/ncr-or.hpp
 layout: document
-redirect_from:
-- /library/lib/util/ncr-or.hpp
-- /library/lib/util/ncr-or.hpp.html
-title: Ncr O(r)
+title: Ncr Or
 ---

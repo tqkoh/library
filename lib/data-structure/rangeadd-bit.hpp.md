@@ -38,8 +38,5 @@ data:
   - test/data-structure/rangeadd-bit.test.cpp
 documentation_of: lib/data-structure/rangeadd-bit.hpp
 layout: document
-redirect_from:
-- /library/lib/data-structure/rangeadd-bit.hpp
-- /library/lib/data-structure/rangeadd-bit.hpp.html
-title: RangeAdd Binary Indexed Tree
+title: Rangeadd BIT
 ---

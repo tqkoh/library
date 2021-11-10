@@ -34,8 +34,5 @@ data:
   - test/graph/warshall-floyd.test.cpp
 documentation_of: lib/graph/warshall-floyd.hpp
 layout: document
-redirect_from:
-- /library/lib/graph/warshall-floyd.hpp
-- /library/lib/graph/warshall-floyd.hpp.html
 title: Warshall Floyd
 ---

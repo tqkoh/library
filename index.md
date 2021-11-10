@@ -5,10 +5,10 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: lib/data-structure/rangeadd-bit.hpp
-      title: RangeAdd Binary Indexed Tree
+      title: Rangeadd BIT
     - icon: ':warning:'
       path: lib/data-structure/splay-tree-set.hpp
-      title: Splay Tree(set)
+      title: Splay Tree Set
     - icon: ':heavy_check_mark:'
       path: lib/data-structure/union-find.hpp
       title: Union Find
@@ -16,7 +16,7 @@ data:
     pages:
     - icon: ':warning:'
       path: lib/gomi/lattice-conv.hpp
-      title: lib/gomi/lattice-conv.hpp
+      title: Lattice Conv
   - name: lib/graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -38,13 +38,13 @@ data:
       title: Divisors
     - icon: ':warning:'
       path: lib/util/eratosthenes.hpp
-      title: eratosthenes
+      title: Eratosthenes
     - icon: ':warning:'
       path: lib/util/mint.hpp
       title: Mint
     - icon: ':warning:'
       path: lib/util/ncr-or.hpp
-      title: Ncr O(r)
+      title: Ncr Or
     - icon: ':warning:'
       path: lib/util/ncr.hpp
       title: Ncr
@@ -53,6 +53,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/template/template.hpp
       title: test/template/template.hpp
+  - name: tools
+    pages:
+    - icon: ':warning:'
+      path: tools/docs.py
+      title: tools/docs.py
   verificationCategories:
   - name: test/data-structure
     pages:
@@ -80,3 +85,15 @@ data:
       title: test/util/divisors.test.cpp
 layout: toppage
 ---
+## めもs
+- tqk がスニペットとして使ってるライブラリたち
+  - [自分用競プロツール](https://github.com/tqkoh/ac)で手元スニペットを更新 競プロディレクトリから`$ mksnip`
+- `gomi` とそれ以外にカテゴリ分けする
+  - `gomi`: 
+    - そのままスニペットになるもの。時短など
+    - 記法:
+      - `#define IGNORE` を書く
+      - `#literal nanka` で nanka という置き換えを作れる。
+      - 本文中で `$nanka$` と書くことで、貼り付け時に `$nanka$` 全てを置換できる
+  - それ以外: 
+    - class などとして global な場所に置くもの。アやデなど

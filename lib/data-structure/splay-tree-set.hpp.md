@@ -144,8 +144,5 @@ data:
   verifiedWith: []
 documentation_of: lib/data-structure/splay-tree-set.hpp
 layout: document
-redirect_from:
-- /library/lib/data-structure/splay-tree-set.hpp
-- /library/lib/data-structure/splay-tree-set.hpp.html
-title: Splay Tree(set)
+title: Splay Tree Set
 ---

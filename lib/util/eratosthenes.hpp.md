@@ -25,8 +25,5 @@ data:
   verifiedWith: []
 documentation_of: lib/util/eratosthenes.hpp
 layout: document
-redirect_from:
-- /library/lib/util/eratosthenes.hpp
-- /library/lib/util/eratosthenes.hpp.html
-title: eratosthenes
+title: Eratosthenes
 ---

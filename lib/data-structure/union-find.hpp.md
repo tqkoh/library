@@ -36,8 +36,5 @@ data:
   - test/data-structure/union-find.test.cpp
 documentation_of: lib/data-structure/union-find.hpp
 layout: document
-redirect_from:
-- /library/lib/data-structure/union-find.hpp
-- /library/lib/data-structure/union-find.hpp.html
 title: Union Find
 ---
