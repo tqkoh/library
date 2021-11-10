@@ -1,4 +1,4 @@
 ---
-title: bfs
-documentation_of: //lib///lib/graph/bfs.hpp
+title: Bfs
+documentation_of: //lib/graph/bfs.hpp
 ---

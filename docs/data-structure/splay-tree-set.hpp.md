@@ -1,4 +1,4 @@
 ---
-title: splay tree set
-documentation_of: //lib///lib/data-structure/splay-tree-set.hpp
+title: Splay Tree Set
+documentation_of: //lib/data-structure/splay-tree-set.hpp
 ---

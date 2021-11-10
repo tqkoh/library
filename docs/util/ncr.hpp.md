@@ -1,4 +1,4 @@
 ---
-title: ncr
-documentation_of: //lib///lib/util/ncr.hpp
+title: Ncr
+documentation_of: //lib/util/ncr.hpp
 ---

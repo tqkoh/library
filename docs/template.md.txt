@@ -1,4 +1,4 @@
 ---
 title: {% title %}
-documentation_of: //lib/{% hpp %}
+documentation_of: {% hpp %}
 ---

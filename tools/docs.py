@@ -19,8 +19,8 @@ def main():
             if not os.path.exists(doc):
                 shutil.copyfile('docs/template.md.txt', doc)
             title = name.split('.')[0].split('-')
-            for word in title:
-                word = word[0].upper() + word[1:]
+            for i in range(len(title)):
+                title[i] = title[i][0].upper() + title[i][1:]
             title = ' '.join(title)
             replacements = {
                 '{% title %}': title,

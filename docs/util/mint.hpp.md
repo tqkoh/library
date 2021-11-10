@@ -1,4 +1,4 @@
 ---
-title: mint
-documentation_of: //lib///lib/util/mint.hpp
+title: Mint
+documentation_of: //lib/util/mint.hpp
 ---

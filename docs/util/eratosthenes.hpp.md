@@ -1,4 +1,4 @@
 ---
-title: eratosthenes
-documentation_of: //lib///lib/util/eratosthenes.hpp
+title: Eratosthenes
+documentation_of: //lib/util/eratosthenes.hpp
 ---

@@ -1,4 +1,4 @@
 ---
-title: union find
-documentation_of: //lib///lib/data-structure/union-find.hpp
+title: Union Find
+documentation_of: //lib/data-structure/union-find.hpp
 ---

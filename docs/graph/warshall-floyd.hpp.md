@@ -1,4 +1,4 @@
 ---
-title: warshall floyd
-documentation_of: //lib///lib/graph/warshall-floyd.hpp
+title: Warshall Floyd
+documentation_of: //lib/graph/warshall-floyd.hpp
 ---

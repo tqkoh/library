@@ -1,4 +1,4 @@
 ---
-title: divisors
-documentation_of: //lib///lib/util/divisors.hpp
+title: Divisors
+documentation_of: //lib/util/divisors.hpp
 ---

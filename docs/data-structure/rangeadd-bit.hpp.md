@@ -1,4 +1,4 @@
 ---
-title: rangeadd bit
-documentation_of: //lib///lib/data-structure/rangeadd-bit.hpp
+title: Rangeadd Bit
+documentation_of: //lib/data-structure/rangeadd-bit.hpp
 ---
