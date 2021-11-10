@@ -15,7 +15,7 @@ def main():
             os.mkdir('docs/' + categoly)
         for file in files:
             name = file.split('/')[-1]
-            doc = 'docs/' + categoly + '/' + name
+            doc = 'docs/' + categoly + '/' + name + '.md'
             if not os.path.exists(doc):
                 shutil.copyfile('docs/template.md.txt', doc)
             title = name.split('.')[0].split('-')
