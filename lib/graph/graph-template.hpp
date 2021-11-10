@@ -1,37 +1,41 @@
 #pragma once
-using length=lint;
+using length = lint;
 struct edge{
-	int src,to;
-	length cost;
-	edge()=default;
-	edge(int src,int to,length cost): src(src),to(to),cost(cost){}
+	int src, to, id;
+	edge() = default;
+	edge(int src, int to, int id = 0): src(src), to(to), id(id){}
 };
 
-using Edges=vector<edge>;
-using Weighted=vector<Edges>;
-using UnWeighted=vector<vector<int> >;
-using Matrix=vector<vector<length> >;
-
-void e2w(Weighted& g,Edges edges,bool directed){
-	for(auto& e:edges){
-		g[e.src].push_back(e);
-		if(!directed)g[e.to].push_back(edge(e.to,e.src,e.cost));
+using Edges = vector<edge>;
+class Graph: public vector<Edges>{
+public:
+	Graph(int n){
+		this->resize(n);
 	}
-}
-void e2u(UnWeighted& g,Edges edges,bool directed){
-	for(auto& e:edges){
-		g[e.src].push_back(e.to);
-		if(!directed)g[e.to].push_back(e.src);
+	void add_edge(edge e, bool directed = 0){
+		(*this)[e.src].push_back(e);
+		if(!directed)(*this)[e.to].push_back(edge(e.to, e.src, e.id));
 	}
-}
-void e2m(Matrix& g,Edges edges,bool directed,length infinity){
-	for(auto& e:g)e.resize(g.size(),infinity);
-	for(int i=0;i<g.size();++i)g[i][i]=0;
-	for(auto& e:edges){
-		g[e.src][e.to]=min(g[e.src][e.to],e.cost);
-		if(!directed)g[e.to][e.src]=min(g[e.to][e.src],e.cost);
+	void add_edge(int src, int to, int id = 0, bool directed = 0){
+		(*this)[src].push_back(edge(src, to, id));
+		if(!directed)(*this)[to].push_back(edge(to, src, id));
 	}
-}
+};
+class Matrix: public vector<vector<length>>{
+public:
+	Matrix(int n, length inf = 2*linf){
+		this->resize(n, vector<length>(n, inf));
+		for(int i = 0; i<n; ++i)(*this)[i][i] = 0;
+	}
+	void add_edge(edge e, length cost, bool directed = 0){
+		if((*this)[e.src][e.to]>cost)(*this)[e.src][e.to] = cost;
+		if(!directed)if((*this)[e.to][e.src]>cost)(*this)[e.to][e.src] = cost;
+	}
+	void add_edge(int src, int to, length cost, bool directed = 0){
+		if((*this)[src][to]>cost)(*this)[src][to] = cost;
+		if(!directed)if((*this)[to][src]>cost)(*this)[to][src] = cost;
+	}
+};
 
 
 /*
