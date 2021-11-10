@@ -1,4 +1,5 @@
 # coding: utf-8
+# verification-helper: IGNORE
 import os
 import glob
 import shutil
