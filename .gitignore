@@ -3,3 +3,4 @@
 rule.md
 test/template/bits/
 deb/*
+*.out

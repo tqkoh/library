@@ -19,16 +19,10 @@ jobs:
       - name: Install dependencies
         run: pip3 install -U online-judge-verify-helper
 
-      # required only if you want to verify C# script files
-      - uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: "3.1.101"
-      - name: Install dependencies (C#)
-        run: dotnet tool install -g dotnet-script && echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
-
+      - name: oj login
+        run: oj login https://atcoder.jp/ -u ${{ secrets.ATCODER_USERNAME }} -p ${{ secrets.ATCODER_PASSWORD }} --use-browser never
       - name: Run tests
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          YUKICODER_TOKEN: ${{ secrets.YUKICODER_TOKEN }}
+          DROPBOX_TOKEN: ${{ secrets.DROPBOX_TOKEN }}
           GH_PAT: ${{ secrets.GH_PAT }}
         run: oj-verify all
