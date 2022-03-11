@@ -14,7 +14,7 @@ int main(){
 		}
 	}
 	vector<lint> d(n, linf); d[0] = 0;
-	bfs(n, 0, g, [&](edge e){
+	bfs(n, 0, [&](int c){ return g[c]; }, [&](edge e){
 		d[e.to] = d[e.src]+1;
 	});
 	for(int i = 0; i<n; ++i){
