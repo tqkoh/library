@@ -36,6 +36,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: lib/util/divisors.hpp
       title: Divisors
+    - icon: ':heavy_check_mark:'
+      path: lib/util/doubling.hpp
+      title: Doubling
     - icon: ':warning:'
       path: lib/util/eratosthenes.hpp
       title: Eratosthenes
@@ -83,6 +86,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/util/divisors.test.cpp
       title: test/util/divisors.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/util/doubling.test.cpp
+      title: test/util/doubling.test.cpp
 layout: toppage
 ---
 ## めもs

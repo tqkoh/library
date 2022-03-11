@@ -8,35 +8,31 @@ data:
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.10.0/x64/lib/python3.10/site-packages/onlinejudge_verify/documentation/build.py\"\
+  bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/onlinejudge_verify/documentation/build.py\"\
     , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n  File \"/opt/hostedtoolcache/Python/3.10.0/x64/lib/python3.10/site-packages/onlinejudge_verify/languages/cplusplus.py\"\
-    , line 187, in bundle\n    bundler.update(path)\n  File \"/opt/hostedtoolcache/Python/3.10.0/x64/lib/python3.10/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
+    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n  File \"/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/onlinejudge_verify/languages/cplusplus.py\"\
+    , line 187, in bundle\n    bundler.update(path)\n  File \"/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 289, in update\n    uncommented_lines = get_uncommented_code(path, iquotes=self.iquotes,\
-    \ compiler=self.compiler).splitlines(keepends=True)\n  File \"/opt/hostedtoolcache/Python/3.10.0/x64/lib/python3.10/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
+    \ compiler=self.compiler).splitlines(keepends=True)\n  File \"/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 195, in get_uncommented_code\n    code = _get_uncommented_code(path.resolve(),\
-    \ iquotes_options=tuple(iquotes_options), compiler=compiler)\n  File \"/opt/hostedtoolcache/Python/3.10.0/x64/lib/python3.10/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
+    \ iquotes_options=tuple(iquotes_options), compiler=compiler)\n  File \"/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 188, in _get_uncommented_code\n    return subprocess.check_output(command)\n\
-    \  File \"/opt/hostedtoolcache/Python/3.10.0/x64/lib/python3.10/subprocess.py\"\
+    \  File \"/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/subprocess.py\"\
     , line 420, in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout,\
-    \ check=True,\n  File \"/opt/hostedtoolcache/Python/3.10.0/x64/lib/python3.10/subprocess.py\"\
+    \ check=True,\n  File \"/opt/hostedtoolcache/Python/3.10.2/x64/lib/python3.10/subprocess.py\"\
     , line 524, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError:\
     \ Command '['g++', '-x', 'c++', '-I', '/home/runner/work/library/library', '-fpreprocessed',\
     \ '-dD', '-E', '/home/runner/work/library/library/lib/gomi/lattice-conv.hpp']'\
     \ returned non-zero exit status 1.\n"
   code: '#define IGNORE
 
-    #literal s
+    #literal z
 
-    auto z = [&](lint y, lint x)->int{ return y*w+x; };
+    #literal uz
 
-    Graph g(h*w);
+    auto $z$ = [&](P p)->int{ return p.f*w+p.s; };
 
-    rep(h)rep(j, w-1)if($s$[i][j]!=''#''&&$s$[i][j+1]!=''#'')g.add_edge(z(i, j), z(i,
-    j+1));
-
-    rep(h-1)rep(j, w)if($s$[i][j]!=''#''&&$s$[i+1][j]!=''#'')g.add_edge(z(i, j), z(i+1,
-    j));
+    auto $uz$ = [&](int c)->P{ return P(c/w, c%w); };
 
     '
   dependsOn: []

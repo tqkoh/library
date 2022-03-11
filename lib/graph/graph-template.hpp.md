@@ -56,9 +56,9 @@ data:
   timestamp: '2021-11-09 20:40:43+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/graph/dijkstra.test.cpp
   - test/graph/bfs.test.cpp
   - test/graph/warshall-floyd.test.cpp
+  - test/graph/dijkstra.test.cpp
 documentation_of: lib/graph/graph-template.hpp
 layout: document
 title: Graph Template
